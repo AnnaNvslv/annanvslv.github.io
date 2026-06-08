@@ -15,8 +15,8 @@
 
 .nav__logo {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.35rem;
+  font-weight: 500;
   color: var(--color-text);
   text-decoration: none;
   line-height: 1.2;
@@ -26,9 +26,9 @@
 .nav__logo span {
   display: block;
   font-family: var(--font-sans);
-  font-size: 0.62rem;
-  font-weight: 400;
-  letter-spacing: 0.16em;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-text-light);
 }
@@ -41,21 +41,17 @@
 }
 
 .nav__links a {
-  font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--color-text-muted);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav__links a:hover,
-.nav__links a.active { color: var(--color-text); }
+.nav__links a.active { color: var(--color-accent); }
 
-.nav__cta {
-  font-size: 0.8rem;
-  padding: 0.6rem 1.4rem;
-}
+.nav__cta { font-size: 0.85rem; padding: 0.65rem 1.4rem; }
 
 .nav__burger {
   display: none;
@@ -70,8 +66,9 @@
 .nav__burger span {
   display: block;
   width: 22px;
-  height: 1.5px;
+  height: 2px;
   background: var(--color-text);
+  border-radius: 1px;
   transition: all 0.3s;
 }
 

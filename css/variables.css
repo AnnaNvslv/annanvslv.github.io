@@ -1,41 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600&display=swap');
 
 :root {
-  /* Цвета */
   --color-bg:          #FFFFFF;
   --color-bg-white:    #FFFFFF;
-  --color-bg-section:  #F8F7F5;
-  --color-bg-dark:     #1A1A1A;
+  --color-bg-section:  #F0F6FF;
+  --color-bg-dark:     #0F2A4A;
 
-  --color-accent:      #8B7355;
-  --color-accent-dark: #6E5A42;
-  --color-accent-light:#D4C4AE;
+  --color-accent:      #1A6DB5;
+  --color-accent-dark: #145A96;
+  --color-accent-light:#B8D6F0;
 
-  --color-text:        #1A1A1A;
-  --color-text-muted:  #5C5750;
-  --color-text-light:  #9C9590;
+  --color-text:        #0D1F33;
+  --color-text-muted:  #3D5068;
+  --color-text-light:  #7A95AE;
 
-  --color-border:      #E8E4DE;
+  --color-border:      #D6E6F5;
 
-  /* Шрифты */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'DM Sans', system-ui, sans-serif;
 
-  /* Отступы */
   --space-xs:  0.5rem;
   --space-sm:  1rem;
   --space-md:  1.5rem;
   --space-lg:  2.5rem;
   --space-xl:  5rem;
 
-  /* Радиусы */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Тени */
-  --shadow-card: 0 1px 12px rgba(0,0,0,0.06);
+  --shadow-card: 0 1px 12px rgba(26,109,181,0.07);
 
-  /* Контейнер */
   --container: 760px;
 }
