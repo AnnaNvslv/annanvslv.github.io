@@ -1,1 +1,40 @@
-QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UGxheWZhaXIrRGlzcGxheTppdGFsLHdnaHRAMCw0MDA7MCw1MDA7MSw0MDAmZmFtaWx5PU11bGlzaDp3Z2h0QDMwMDs0MDA7NTAwOzYwMCZkaXNwbGF5PXN3YXAnKTsKCjpyb290IHsKICAvKiDQptCy0LXRgtCwICovCiAgLS1jb2xvci1iZzogICAgICAgICAgI0YwRjdGRjsKICAtLWNvbG9yLWJnLXdoaXRlOiAgICAjRkZGRkZGOwogIC0tY29sb3ItYmctc2VjdGlvbjogICNFNkYxRkI7CgogIC0tY29sb3ItYWNjZW50OiAgICAgICMxRTZGQkY7CiAgLS1jb2xvci1hY2NlbnQtZGFyazogIzE1NTE5MjsKICAtLWNvbG9yLWFjY2VudC1saWdodDojQjVENEY0OwoKICAtLWNvbG9yLXRleHQ6ICAgICAgICAjMEYyQTRBOwogIC0tY29sb3ItdGV4dC1tdXRlZDogICM0QTY1ODA7CiAgLS1jb2xvci10ZXh0LWxpZ2h0OiAgIzdBOUFCODsKCiAgLS1jb2xvci1ib3JkZXI6ICAgICAgI0QwRTRGNTsKCiAgLyog0KjRgNC40YTRgtGLICovCiAgLS1mb250LXNlcmlmOiAnUGxheWZhaXIgRGlzcGxheScsIEdlb3JnaWEsIHNlcmlmOwogIC0tZm9udC1zYW5zOiAgJ011bGlzaCcsIHNhbnMtc2VyaWY7CgogIC8qINCe0YLRgdGC0YPQv9GLINC1ICovCiAgLS1zcGFjZS14czogIDAuNXJlbTsKICAtLXNwYWNlLXNtOiAgMXJlbTsKICAtLXNwYWNlLW1kOiAgMS41cmVtOwogIC0tc3BhY2UtbGc6ICAyLjVyZW07CiAgLS1zcGFjZS14bDogIDRyZW07CgogIC8qINCg0LDQtNC40YPRgdGLICovCiAgLS1yYWRpdXMtc206IDZweDsKICAtLXJhZGl1cy1tZDogMTBweDsKICAtLXJhZGl1cy1sZzogMTZweDsKCiAgLyog0KLQtdC90Lgg Ki8KICAtLXNoYWRvdy1jYXJkOiAwIDJweCAxNnB4IHJnYmEoMzAsIDExMSwgMTkxLCAwLjA3KTsKCiAgLyog0JrQvtC90YLQtdC50L3QtdGAICovCiAgLS1jb250YWluZXI6IDc2MHB4Owp9Cg==
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Mulish:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Цвета */
+  --color-bg:          #F0F7FF;
+  --color-bg-white:    #FFFFFF;
+  --color-bg-section:  #E6F1FB;
+
+  --color-accent:      #1E6FBF;
+  --color-accent-dark: #155192;
+  --color-accent-light:#B5D4F4;
+
+  --color-text:        #0F2A4A;
+  --color-text-muted:  #4A6580;
+  --color-text-light:  #7A9AB8;
+
+  --color-border:      #D0E4F5;
+
+  /* Шрифты */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'Mulish', sans-serif;
+
+  /* Отступы */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+
+  /* Радиусы */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Тени */
+  --shadow-card: 0 2px 16px rgba(30, 111, 191, 0.07);
+
+  /* Контейнер */
+  --container: 760px;
+}
