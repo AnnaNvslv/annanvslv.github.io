@@ -7,7 +7,7 @@
 
 .about-hero__inner {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: var(--space-lg);
   align-items: start;
 }
@@ -23,15 +23,12 @@
   display: block;
   object-fit: cover;
   aspect-ratio: 3/4;
-  filter: grayscale(8%);
 }
 
-.about-hero__content h1 {
-  margin-bottom: 0.2rem;
-}
+.about-hero__content h1 { margin-bottom: 0.2rem; }
 
 .about-hero__role {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -39,28 +36,23 @@
   margin-bottom: var(--space-md) !important;
 }
 
-.about-hero__content p {
-  margin-bottom: var(--space-sm);
-}
-
-.about-hero__content .btn {
-  margin-top: var(--space-sm);
-}
+.about-hero__content .btn { margin-top: var(--space-sm); }
 
 /* FACTS */
 .about-facts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--color-border);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
+  margin-bottom: var(--space-md);
 }
 
 .about-fact {
   background: var(--color-bg-white);
-  padding: var(--space-md) var(--space-md) calc(var(--space-md) + 4px);
+  padding: var(--space-md);
 }
 
 .about-fact__num {
@@ -69,7 +61,7 @@
   font-weight: 800;
   color: var(--color-accent);
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   letter-spacing: -0.03em;
 }
 
@@ -77,6 +69,63 @@
   font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+}
+
+/* EDUCATION */
+.about-edu {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+}
+
+.about-edu__item {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  background: var(--color-bg-white);
+  padding: var(--space-md);
+}
+
+.about-edu__year {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent-light);
+  min-width: 56px;
+  line-height: 1.2;
+  padding-top: 2px;
+}
+
+.about-edu__item h4 { margin-bottom: 0.2rem; }
+.about-edu__item p { font-size: 0.9rem; margin: 0; }
+
+/* DOCS */
+.about-docs__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.about-docs__placeholder {
+  background: var(--color-bg-section);
+  padding: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px dashed var(--color-accent-light);
+  border-radius: 0;
 }
 
 /* APPROACH */
@@ -95,45 +144,19 @@
   padding: var(--space-md);
 }
 
-.about-approach__item h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
-}
-
-.about-approach__item p {
-  font-size: 0.95rem;
-  margin: 0;
-}
+.about-approach__item h4 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.about-approach__item p { font-size: 0.95rem; margin: 0; }
 
 /* CTA */
-.cta-section {
-  background: var(--color-bg-section);
-  border-top: 1px solid var(--color-border);
-}
+.cta-section { background: var(--color-bg-section); border-top: 1px solid var(--color-border); }
 .cta-section__inner { text-align: center; }
-.cta-section h2 { color: var(--color-text); }
-.cta-section p { color: var(--color-text-muted); }
-.cta-section .btn--outline {
-  border-color: var(--color-border);
-  color: var(--color-text-muted);
-}
-.cta-section .btn--outline:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
+.cta-section .btn--outline { border-color: var(--color-border); color: var(--color-text-muted); }
+.cta-section .btn--outline:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
 @media (max-width: 700px) {
-  .about-hero__inner {
-    grid-template-columns: 1fr;
-  }
-  .about-hero__photo {
-    position: static;
-    max-width: 280px;
-  }
-  .about-facts {
-    grid-template-columns: 1fr;
-  }
-  .about-approach__grid {
-    grid-template-columns: 1fr;
-  }
+  .about-hero__inner { grid-template-columns: 1fr; }
+  .about-hero__photo { position: static; max-width: 260px; }
+  .about-facts { grid-template-columns: repeat(2, 1fr); }
+  .about-approach__grid { grid-template-columns: 1fr; }
+  .about-docs__grid { grid-template-columns: 1fr; }
 }
