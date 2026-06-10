@@ -108,9 +108,9 @@
 .about-docs { margin-top: var(--space-md); }
 
 .about-docs__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-docs__item {
@@ -163,5 +163,4 @@
   .about-hero__photo { position: static; max-width: 260px; }
   .about-facts { grid-template-columns: repeat(2, 1fr); }
   .about-approach__grid { grid-template-columns: 1fr; }
-  .about-docs__grid { grid-template-columns: 1fr; }
 }
