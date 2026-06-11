@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Услуги и цены — Анна Новосёлова</title>
   <meta name="description" content="Стоимость приёма оптометриста в Нови Саде. Первичный и повторный приём, подбор очков и контактных линз. Оптика Ginter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -14,7 +16,14 @@
 <body>
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">Анна Новосёлова<span>Оптометрист · Нови Сад</span></a>
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html">Обо мне</a></li>
@@ -39,15 +48,15 @@
         <div class="price-item__info">
           <h4>Первичный приём</h4>
           <p>Полное обследование зрения, подбор очков или контактных линз, рекомендации, помощь с заказом в оптике.</p>
-          <span class="price-item__time">⏱ 60 минут</span>
+          <span class="price-item__time">60 минут</span>
         </div>
         <div class="price-item__cost">3 000 <span>дин</span></div>
       </div>
       <div class="price-item">
         <div class="price-item__info">
           <h4>Повторный приём</h4>
-          <p>Контроль зрения, корректировка рецепта, повторные рекомендации. В течение 6 месяцев после первичного.</p>
-          <span class="price-item__time">⏱ 60 минут</span>
+          <p>Контроль зрения, корректировка подбора, повторные рекомендации. В течение 6 месяцев после первичного.</p>
+          <span class="price-item__time">60 минут</span>
         </div>
         <div class="price-item__cost">2 000 <span>дин</span></div>
       </div>
@@ -55,26 +64,26 @@
         <div class="price-item__info">
           <h4>Консультация в оптике</h4>
           <p>Помощь с выбором оправы и линз, проверка готовых очков, второе мнение — без проверки зрения.</p>
-          <span class="price-item__time">⏱ 30 минут</span>
+          <span class="price-item__time">30 минут</span>
         </div>
         <div class="price-item__cost">1 000 <span>дин</span></div>
       </div>
       <div class="price-item price-item--free">
         <div class="price-item__info">
           <h4>Помощь при оформлении заказа</h4>
-          <p>Помогу выбрать оправу и линзы под ваш бюджет и рецепт, оформить заказ в оптике.</p>
+          <p>Помогу выбрать оправу и линзы под ваш бюджет, оформить заказ в оптике.</p>
         </div>
         <div class="price-item__cost price-item__cost--free">Бесплатно</div>
       </div>
     </div>
-    <p class="prices__note">💳 Оплата только наличными · Запись обязательна</p>
+    <p class="prices__note">Оплата только наличными · Запись обязательна</p>
   </div>
 </section>
 
 <section class="section section--gray">
   <div class="container">
-    <p class="section-label">Частые вопросы</p>
-    <h2 class="section-title">Что входит в приём</h2>
+    <p class="section-label">Что входит в приём</p>
+    <h2 class="section-title">Из чего состоит приём</h2>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
@@ -105,7 +114,7 @@
         </div>
       </div>
     </div>
-    <a href="priem.html" class="btn btn--outline" style="margin-top:1.5rem">Подробнее о приёме →</a>
+    <a href="priem.html" class="btn btn--outline" style="margin-top:1.5rem">Подробнее о приёме</a>
   </div>
 </section>
 

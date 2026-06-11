@@ -3,21 +3,22 @@
 :root {
   --color-bg:          #FFFFFF;
   --color-bg-white:    #FFFFFF;
-  --color-bg-section:  #F0F6FF;
+  --color-bg-section:  #F4F7FA;
   --color-bg-dark:     #0F2A4A;
 
-  --color-accent:      #1A6DB5;
-  --color-accent-dark: #145A96;
-  --color-accent-light:#B8D6F0;
+  --color-accent:      #1F5E9C;
+  --color-accent-dark: #174d82;
+  --color-accent-light:#DDEEFE;
 
-  --color-text:        #0D1F33;
+  --color-text:        #243041;
   --color-text-muted:  #3D5068;
   --color-text-light:  #7A95AE;
 
   --color-border:      #D6E6F5;
 
-  --font-serif: 'Manrope', system-ui, sans-serif;
-  --font-sans:  'Inter', system-ui, sans-serif;
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-serif:   'Manrope', system-ui, sans-serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
 
   --space-xs:  0.5rem;
   --space-sm:  1rem;
@@ -29,7 +30,7 @@
   --radius-md: 10px;
   --radius-lg: 14px;
 
-  --shadow-card: 0 2px 16px rgba(26,109,181,0.08);
+  --shadow-card: 0 2px 16px rgba(31,94,156,0.08);
 
   --container: 780px;
 }

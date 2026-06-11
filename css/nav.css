@@ -14,8 +14,9 @@
   gap: 1rem;
 }
 
+/* old text logo — kept for fallback */
 .nav__logo {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text);
@@ -33,6 +34,35 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-light);
+}
+
+/* SVG logo */
+.nav__logo-svg {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav__logo-svg svg {
+  height: 52px;
+  width: auto;
+}
+
+.logo-name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  fill: #243041;
+}
+
+.logo-sub {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  fill: #1F5E9C;
 }
 
 .nav__links {

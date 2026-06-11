@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обо мне — Анна Новосёлова, оптометрист</title>
   <meta name="description" content="Анна Новосёлова — медицинский оптик и оптометрист в Нови Саде. Работаю в оптике с 2004 года, веду приём в оптике Ginter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -15,7 +17,14 @@
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">Анна Новосёлова<span>Оптометрист · Нови Сад</span></a>
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html" class="active">Обо мне</a></li>
@@ -112,7 +121,7 @@
         <p>Никаких терминов без объяснений. Пациент уходит с пониманием того, что происходит с его зрением, какие очки и для чего ему нужны.</p>
       </div>
       <div class="about-approach__item">
-        <h4>Сопровождаю в оптике до получения готовых очков</h4>
+        <h4>Сопровождаю до получения готовых очков</h4>
         <p>В мой приём включена не только проверка зрения и выписка рекомендаций. Я буду рядом в оптике при выборе оправы и линз, при получении очков и на всём периоде адаптации.</p>
       </div>
       <div class="about-approach__item">
@@ -129,7 +138,7 @@
     <h2>Записаться на приём</h2>
     <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
-      <a href="zapis.html" class="btn">Онлайн-запись</a>
+      <a href="zapis.html" class="btn">Записаться</a>
       <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
     </div>
     <p style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-light)">Оптика Ginter · Trg Republike 25, Novi Sad</p>
