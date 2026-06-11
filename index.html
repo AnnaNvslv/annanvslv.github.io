@@ -6,17 +6,33 @@
   <title>Анна Новосёлова — оптометрист в Нови Саде</title>
   <meta name="description" content="Проверка зрения, подбор очков и контактных линз в Нови Саде. Оптометрист Анна Новосёлова. Приём на русском языке, оптика Ginter.">
   <meta name="keywords" content="оптометрист Нови Сад, проверка зрения Нови Сад, подбор очков Сербия, оптика Нови Сад">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .nav__logo-svg { display: flex; align-items: center; text-decoration: none; }
+    .nav__logo-svg svg { height: 52px; width: auto; }
+    .logo-name { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.14em; fill: #243041; }
+    .logo-sub  { font-family: 'Manrope', sans-serif; font-weight: 400; font-size: 9px; letter-spacing: 0.22em; fill: #1F5E9C; }
+  </style>
 </head>
 <body>
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">Анна Новосёлова<span>Оптометрист · Нови Сад</span></a>
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html">Обо мне</a></li>
