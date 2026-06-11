@@ -43,15 +43,22 @@
   padding: var(--space-md) var(--space-md) calc(var(--space-md) + 4px);
 }
 
-.reason-icon {
-  font-size: 1.1rem;
-  margin-bottom: 0.9rem;
-  display: block;
-  opacity: 0.7;
+.reason-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-.reason-card h4 {
-  margin-bottom: 0.4rem;
+.reason-card__header img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.reason-card__header h4 {
+  margin: 0;
   font-size: 0.95rem;
 }
 
@@ -94,7 +101,7 @@
 .price-item__cost {
   font-family: var(--font-serif);
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-text);
   white-space: nowrap;
   padding-top: 2px;
@@ -206,13 +213,8 @@
 
 .cta-section__inner { text-align: center; }
 
-.cta-section h2 {
-  color: var(--color-text);
-}
-
-.cta-section p {
-  color: var(--color-text-muted);
-}
+.cta-section h2 { color: var(--color-text); }
+.cta-section p { color: var(--color-text-muted); }
 
 .cta-section .btn--outline {
   border-color: var(--color-border);
