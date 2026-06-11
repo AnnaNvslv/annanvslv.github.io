@@ -20,7 +20,7 @@
       font-size: 1.1rem;
       color: var(--color-text-muted);
       line-height: 1.8;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
       font-weight: 300;
     }
     .priem-article h2 {
@@ -48,6 +48,20 @@
       font-size: 0.95rem;
       line-height: 1.75;
       color: var(--color-text-muted);
+    }
+    .priem-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.5rem 0 2rem;
+      border: 1px solid var(--color-border);
+    }
+    .priem-photo-caption {
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
     }
     .steps-list {
       display: flex;
@@ -88,6 +102,14 @@
       margin-bottom: 0.3rem;
       line-height: 1.7;
     }
+    .step-item__body .priem-photo {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .step-item__body .priem-photo-caption {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
     @media (max-width: 600px) {
       .step-item { gap: 0.9rem; }
       .step-item__num { font-size: 1.5rem; min-width: 36px; }
@@ -118,6 +140,9 @@
       <p class="lead">
         Некоторые пациенты удивляются: зачем целый час на подбор очков? Расскажу подробно — считаю важным, чтобы вы знали, что вас ждёт.
       </p>
+
+      <img src="images/optika-hall.jpg" alt="Зал оптики Ginter — витрины с оправами Vogue, Ralph Lauren и другими брендами" class="priem-photo">
+      <p class="priem-photo-caption">Оптика Ginter, Нови Сад — здесь проходит приём</p>
 
       <h2>До приёма: анкета</h2>
       <p>
@@ -159,6 +184,8 @@
               <li><strong>Объективная рефракция</strong> — авторефкератометр считывает показатели глаза, пока вы смотрите на воздушный шар внутри прибора.</li>
               <li><strong>Субъективная рефракция</strong> — с помощью пробного набора линз и пробной оправы проверяется острота зрения: пациент называет цифры на экране с разными подставленными линзами.</li>
             </ul>
+            <img src="images/optika-cabinet.jpg" alt="Кабинет проверки зрения — авторефкератометр и пробный набор линз" class="priem-photo">
+            <p class="priem-photo-caption">Кабинет — авторефкератометр и пробный набор линз</p>
           </div>
         </div>
 
