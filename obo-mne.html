@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/about.css">
+  <style>
+    .toc { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; max-width: 400px; }
+    .toc__title { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 0.75rem; }
+    .toc__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+    .toc__list li a { font-size: 0.95rem; color: var(--color-accent); text-decoration: none; }
+    .toc__list li a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 
@@ -28,18 +35,17 @@
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html" class="active">Обо мне</a></li>
-      <li><a href="priem.html">Приём</a></li>
       <li><a href="uslugi.html">Услуги и цены</a></li>
+      <li><a href="priem.html">Как проходит приём</a></li>
       <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="zapis.html">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Записаться</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="about-hero">
+<section class="about-hero" id="obo-mne">
   <div class="container">
     <div class="about-hero__inner">
       <div class="about-hero__photo">
@@ -53,18 +59,30 @@
         <p>Помогаю разобраться со зрением: от первичной проверки до подбора коррекции — в том числе в сложных случаях: астигматизм, большая разница между глазами, сложности с привыканием к очкам.</p>
         <p>Работаю в оптике с 2004 года. В 2014 получила классическое медицинское образование по специальности медицинский оптик, оптометрист. Работала в Санкт-Петербурге как с пациентами, так и мастером по изготовлению очков.</p>
         <p>После переезда в Сербию в 2024 году продолжаю практику в Нови Саде. Веду офлайн-приём в оптике Ginter и онлайн-консультации. Придерживаюсь принципов доказательной медицины. Вижу в каждом пациенте человека!</p>
-        <a href="zapis.html" class="btn">Записаться на приём</a>
+
+        <!-- ОГЛАВЛЕНИЕ -->
+        <nav class="toc" aria-label="Оглавление">
+          <div class="toc__title">На этой странице</div>
+          <ul class="toc__list">
+            <li><a href="#obo-mne">Обо мне</a></li>
+            <li><a href="#obrazovanie">Образование и опыт</a></li>
+            <li><a href="#diplomy">Дипломы</a></li>
+            <li><a href="#podxod">Мой подход</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Записаться на приём</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- КВАЛИФИКАЦИЯ -->
-<section class="section section--gray">
+<section class="section section--gray" id="obrazovanie">
   <div class="container">
     <p class="section-label">Образование и опыт</p>
-    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem">
-      <img src="images/kvalifikacija.png" alt="" aria-hidden="true" style="width:48px;height:48px;object-fit:contain;flex-shrink:0">
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:0.5rem">
+      <img src="images/diploma.png" alt="" aria-hidden="true" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;margin-top:0.25rem">
       <h2 class="section-title" style="margin-bottom:0">Квалификация</h2>
     </div>
     <div class="about-facts">
@@ -93,7 +111,7 @@
         </div>
       </div>
     </div>
-    <div class="about-docs">
+    <div class="about-docs" id="diplomy">
       <p class="section-label" style="margin-bottom:1rem">Дипломы</p>
       <div class="about-docs__grid">
         <div class="about-docs__item">
@@ -110,25 +128,40 @@
 </section>
 
 <!-- КАК Я РАБОТАЮ -->
-<section class="section section--white">
+<section class="section section--white" id="podxod">
   <div class="container">
     <p class="section-label">Подход</p>
-    <h2 class="section-title">Как я работаю</h2>
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem">
+      <img src="images/kak_ja_rabotaju.png" alt="" aria-hidden="true" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;margin-top:0.25rem">
+      <h2 class="section-title" style="margin:0">Как я работаю</h2>
+    </div>
     <div class="about-approach__grid">
       <div class="about-approach__item">
-        <h4>Подробный сбор анамнеза</h4>
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+          <img src="images/anamnez.png" alt="" aria-hidden="true" style="width:32px;height:32px;object-fit:contain;flex-shrink:0">
+          <h4 style="margin:0">Подробный сбор анамнеза</h4>
+        </div>
         <p>Восстанавливаю историю ношения очков: как менялось зрение с самого начала, какие очки были раньше, что не устраивает сейчас. Собираю анамнез по заболеваниям и состояниям, которые могут повлиять на зрение и подбор коррекции. Проверяю параметры старых очков.</p>
       </div>
       <div class="about-approach__item">
-        <h4>Объясняю понятно</h4>
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+          <img src="images/objasnjaju_podrobno.png" alt="" aria-hidden="true" style="width:32px;height:32px;object-fit:contain;flex-shrink:0">
+          <h4 style="margin:0">Объясняю понятно</h4>
+        </div>
         <p>Никаких терминов без объяснений. Пациент уходит с пониманием того, что происходит с его зрением, какие очки и для чего ему нужны.</p>
       </div>
       <div class="about-approach__item">
-        <h4>Сопровождаю до получения готовых очков</h4>
-        <p>В мой приём включена не только проверка зрения и выписка рекомендаций. Я буду рядом в оптике при выборе оправы и линз, при получении очков и на всём периоде адаптации.</p>
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+          <img src="images/soprovozdaju_do_polucenija_ockov.png" alt="" aria-hidden="true" style="width:32px;height:32px;object-fit:contain;flex-shrink:0">
+          <h4 style="margin:0">Сопровождаю до получения готовых очков</h4>
+        </div>
+        <p>В мой приём включена не только проверка зрения и выдача рекомендаций. Я буду рядом в оптике при выборе оправы и линз, при получении очков и на всём периоде адаптации.</p>
       </div>
       <div class="about-approach__item">
-        <h4>На связи после приёма</h4>
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+          <img src="images/na_svjazi_posle_prijoma.png" alt="" aria-hidden="true" style="width:32px;height:32px;object-fit:contain;flex-shrink:0">
+          <h4 style="margin:0">На связи после приёма</h4>
+        </div>
         <p>Если что-то не так — неудобные очки, дискомфорт в линзах, трудности с адаптацией к новой коррекции — просто напишите. Найдём решение вместе.</p>
       </div>
     </div>
@@ -141,7 +174,7 @@
     <h2>Записаться на приём</h2>
     <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
-      <a href="zapis.html" class="btn">Записаться</a>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
       <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
     </div>
     <p style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-light)">Оптика Ginter · Trg Republike 25, Novi Sad</p>
@@ -159,10 +192,10 @@
         <p class="footer__heading">Навигация</p>
         <ul class="footer__links">
           <li><a href="obo-mne.html">Обо мне</a></li>
+          <li><a href="uslugi.html">Услуги и цены</a></li>
           <li><a href="priem.html">Как проходит приём</a></li>
-          <li><a href="uslugi.html">Услуги и ценьы</a></li>
           <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="zapis.html">Записаться</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
           <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
         </ul>
       </div>
