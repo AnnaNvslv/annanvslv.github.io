@@ -1,5 +1,14 @@
 # Changelog — annanvslv.github.io
 
+## 2026-06-11
+
+### Логотип (index.html)
+- Разработан SVG-логотип по брендбуку: Manrope 700, светло-голубой фон #DDEEFE, тёмный текст #243041, акцент #1F5E9C
+- OPTOMETRIST: Manrope Regular 400, 16px, letter-spacing 0.22em — выбран компромисс между читаемостью и элегантностью
+- Текстовый `nav__logo` заменён на inline SVG в навбаре
+- Добавлен preconnect для Google Fonts (Manrope 400/700)
+- Сохранён файл `anna_novoselova_logo.svg` (500×100px, standalone версия)
+
 ## 2026-06-10
 
 ### Страница «О зрении» (o-zrenii.html)
