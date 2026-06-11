@@ -9,6 +9,90 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .priem-article {
+      max-width: 720px;
+    }
+    .priem-article h1 {
+      margin-bottom: 0.5rem;
+    }
+    .priem-article .lead {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+    }
+    .priem-article h2 {
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .priem-article p {
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+    .priem-article ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .priem-article ul li {
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+    .priem-article .insight {
+      background: var(--color-bg-section);
+      border-left: 3px solid var(--color-accent);
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--color-text-muted);
+    }
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+    }
+    .step-item {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-item__num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--color-accent-light);
+      min-width: 48px;
+      line-height: 1;
+      padding-top: 4px;
+      letter-spacing: -0.02em;
+    }
+    .step-item__body h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .step-item__body p {
+      font-size: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+    .step-item__body ul {
+      font-size: 0.9rem;
+      padding-left: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .step-item__body ul li {
+      margin-bottom: 0.3rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .step-item { gap: 0.9rem; }
+      .step-item__num { font-size: 1.5rem; min-width: 36px; }
+    }
+  </style>
 </head>
 <body>
 <nav class="nav">
@@ -25,13 +109,97 @@
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
 <section class="section section--white" style="padding-top:5rem">
   <div class="container">
-    <p class="section-label">В разработке</p>
-    <h1>Как проходит приём</h1>
-    <p>Страница в разработке. <a href="zapis.html">Записаться на приём →</a></p>
+    <div class="priem-article">
+      <p class="section-label">Приём</p>
+      <h1>Как проходит приём, и почему он длится час ⏱️</h1>
+      <p class="lead">
+        Некоторые пациенты удивляются: зачем целый час на подбор очков? Расскажу подробно — считаю важным, чтобы вы знали, что вас ждёт.
+      </p>
+
+      <h2>До приёма: анкета</h2>
+      <p>
+        При записи я прошу заполнить <strong>анкету</strong> — с вопросами о целях визита, последнем посещении офтальмолога, наличии заболеваний и состояний, которые могут влиять на зрение. Жду честных и развёрнутых ответов: от этого во многом зависит качество консультации.
+      </p>
+      <p>
+        Когда получаю анкету — изучаю её, и если есть вопросы, могу уточнить их <strong>до приёма</strong>.
+      </p>
+
+      <div class="insight">
+        Если не собрать анамнез заранее, можно начать обследование — и посередине понять, что продолжать бессмысленно: пациента всё равно нужно направить к офтальмологу. Анкета экономит время и деньги.
+      </div>
+
+      <p>
+        После получения анкеты я отправляю подтверждение: дату, время, адрес, стоимость приёма и инструкции по подготовке.
+      </p>
+
+      <h2>Четыре этапа консультации</h2>
+
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-item__num">1</div>
+          <div class="step-item__body">
+            <h3>Анамнез и объяснение ✍️</h3>
+            <p>Подробно расспрашиваю о перенесённых заболеваниях, травмах, жалобах — и об истории зрения: с какого возраста упало, как носили очки, когда меняли.</p>
+            <p>Потом почти всегда <strong>рисую</strong> 👩‍🎨 — глаз и ход лучей (да-да, физика 8 класса). На схеме объясняю, почему сейчас видно так, и что изменится после коррекции.</p>
+            <div class="insight">
+              Около 80% пациентов не понимают, почему им нужны очки — просто носят, потому что врач сказал. Когда человек понимает, что происходит с его зрением, уходит тревога и появляется осознанность. Я уделяю этому время сознательно.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-item__num">2</div>
+          <div class="step-item__body">
+            <h3>Обследование 🔍</h3>
+            <ul>
+              <li><strong>Объективная рефракция</strong> — авторефкератометр считывает показатели глаза, пока вы смотрите на воздушный шар внутри прибора.</li>
+              <li><strong>Субъективная рефракция</strong> — с помощью пробного набора линз и пробной оправы проверяется острота зрения: пациент называет цифры на экране с разными подставленными линзами.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-item__num">3</div>
+          <div class="step-item__body">
+            <h3>Подбор очков 👓</h3>
+            <p>
+              Учитываю запрос и особенности зрительной работы: расстояние до монитора, до швейной машинки, до холста. Процессу подбора уделяю столько времени, сколько нужно — кто-то быстро находит комфортный вариант, кому-то нужно больше. Это нормально.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-item__num">4</div>
+          <div class="step-item__body">
+            <h3>Рекомендации и сопровождение 🧾</h3>
+            <p>По итогам обследования распечатываю карточку с результатами и рекомендациями. Даю схему адаптации к новым очкам, а в сложных случаях — стратегию постепенной смены коррекции.</p>
+            <p>Если остаётся время — провожаю в оптику. Помогаю выбрать оправу, подбираю линзы под бюджет и задачи, проверяю посадку, делаю разметку. Рассказываю, как носить и ухаживать за очками.</p>
+            <p>
+              После получения очков <strong>я остаюсь на связи</strong> — можно писать и спрашивать, отвечу в свободное время 💬
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </section>
+
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-section__inner">
+      <h2>Записаться на приём</h2>
+      <p>Консультация длится 1 час. Принимаю в Нови Саде, в оптике Ginter.</p>
+      <a href="zapis.html" class="btn">Записаться</a>
+    </div>
+  </div>
+</section>
+
 <footer class="footer"><div class="container"><div class="footer__bottom">Оптика Ginter · Trg Republike 25, Novi Sad</div></div></footer>
 <script src="js/nav.js"></script>
 </body>
