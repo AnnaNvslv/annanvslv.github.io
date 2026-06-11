@@ -15,7 +15,6 @@
   <style>
     .priem-article { max-width: 720px; }
     .priem-article .lead { font-size: 1.1rem; color: var(--color-text-muted); line-height: 1.8; margin-bottom: 2rem; font-weight: 300; }
-    .priem-article h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-top: 2.5rem; margin-bottom: 0.75rem; }
     .priem-article p { line-height: 1.85; margin-bottom: 1rem; }
     .priem-article ul { padding-left: 1.25rem; margin-bottom: 1rem; }
     .priem-article ul li { line-height: 1.8; margin-bottom: 0.4rem; }
@@ -34,10 +33,20 @@
     .step-item__body .priem-photo-caption { margin-bottom: 0.75rem; }
     .podgotovka-list { display: flex; flex-direction: column; gap: 1px; background: var(--color-border); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
     .podgotovka-item { display: flex; gap: 1.25rem; align-items: flex-start; background: var(--color-bg-white); padding: 1.25rem 1.5rem; }
-    .podgotovka-item__icon { font-size: 1.3rem; min-width: 32px; padding-top: 3px; }
     .podgotovka-item__img { width: 36px; height: 36px; object-fit: contain; flex-shrink: 0; padding-top: 2px; }
     .podgotovka-item h4 { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.25rem; }
     .podgotovka-item p { font-size: 0.95rem; margin: 0; }
+    .toc { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; display: inline-block; min-width: 280px; }
+    .toc__title { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 0.75rem; }
+    .toc__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; counter-reset: toc; }
+    .toc__list li { display: flex; gap: 0.5rem; }
+    .toc__list li::before { counter-increment: toc; content: counter(toc) "."; font-size: 0.95rem; color: var(--color-text-muted); min-width: 1.25rem; }
+    .toc__list li a { font-size: 0.95rem; color: var(--color-accent); text-decoration: none; }
+    .toc__list li a:hover { text-decoration: underline; }
+    .zapis-steps { padding-left: 1.25rem; }
+    .zapis-steps li { margin-bottom: 0.6rem; line-height: 1.75; font-size: 1rem; }
+    .section-icon-heading { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.75rem; }
+    .section-icon-heading img { width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; margin-top: 0.25rem; }
     @media (max-width: 600px) { .step-item { gap: 0.9rem; } .step-item__num { font-size: 1.5rem; min-width: 36px; } }
   </style>
 </head>
@@ -55,12 +64,11 @@
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="priem.html" class="active">Приём</a></li>
       <li><a href="uslugi.html">Услуги и цены</a></li>
+      <li><a href="priem.html" class="active">Как проходит приём</a></li>
       <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="zapis.html">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Записаться</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -69,58 +77,91 @@
   <div class="container">
     <div class="priem-article">
       <p class="section-label">Приём</p>
-      <h1>Как проходит приём, и почему он длится час</h1>
-      <p class="lead">Некоторые пациенты удивляются: зачем целый час на подбор очков? Расскажу подробно — считаю важным, чтобы вы знали, что вас ждёт.</p>
 
-      <img src="images/optika-hall.jpg" alt="Пробный набор очковых линз и пробная оправа для проверки зрения" class="priem-photo">
-      <p class="priem-photo-caption">Пробный набор линз и пробная оправа — с их помощью подбирается коррекция</p>
+      <!-- ОГЛАВЛЕНИЕ -->
+      <nav class="toc" aria-label="Оглавление">
+        <div class="toc__title">На этой странице</div>
+        <ul class="toc__list">
+          <li><a href="#kak-proxodit">Как проходит приём</a></li>
+          <li><a href="#podgotovka">Как подготовиться</a></li>
+          <li><a href="#kak-zapisatsja">Как записаться</a></li>
+        </ul>
+      </nav>
 
-      <h2>До приёма: анкета</h2>
-      <p>При записи я прошу заполнить <strong>анкету</strong> — с вопросами о целях визита, последнем посещении офтальмолога, наличии заболеваний и состояний, которые могут влиять на зрение. Жду честных и развёрнутых ответов: от этого во многом зависит качество консультации.</p>
-      <p>Когда получаю анкету — изучаю её, и если есть вопросы, могу уточнить их <strong>до приёма</strong>.</p>
-
-      <div class="insight">Если не собрать анамнез заранее, можно начать обследование — и посередине понять, что продолжать бессмысленно: пациента всё равно нужно направить к офтальмологу. Анкета экономит время и деньги.</div>
-
-      <p>После получения анкеты я отправляю подтверждение: дату, время, адрес, стоимость приёма и инструкции по подготовке.</p>
-
-      <h2>Четыре этапа консультации</h2>
-
-      <div class="steps-list">
-        <div class="step-item">
-          <div class="step-item__num">1</div>
-          <div class="step-item__body">
-            <h3>Анамнез и объяснение</h3>
-            <p>Подробно расспрашиваю о перенесённых заболеваниях, травмах, жалобах — и об истории зрения: с какого возраста упало, как носили очки, когда меняли.</p>
-            <p>Потом почти всегда <strong>рисую</strong> — глаз и ход лучей (да-да, физика 8 класса). На схеме объясняю, почему сейчас видно так, и что изменится после коррекции.</p>
-            <div class="insight">Около 80% пациентов не понимают, почему им нужны очки — просто носят, потому что врач сказал. Когда человек понимает, что происходит с его зрением, уходит тревога и появляется осознанность. Я уделяю этому время сознательно.</div>
-          </div>
+      <!-- КАК ПРОХОДИТ -->
+      <div id="kak-proxodit">
+        <div class="section-icon-heading">
+          <img src="images/kaka_prohodit_prijom.png" alt="" aria-hidden="true">
+          <h1>Как проходит приём, и почему он длится час</h1>
         </div>
-        <div class="step-item">
-          <div class="step-item__num">2</div>
-          <div class="step-item__body">
-            <h3>Обследование</h3>
-            <ul>
-              <li><strong>Объективная рефракция</strong> — авторефкератометр считывает показатели глаза, пока вы смотрите на воздушный шар внутри прибора.</li>
-              <li><strong>Субъективная рефракция</strong> — с помощью пробного набора линз и пробной оправы проверяется острота зрения.</li>
-            </ul>
-            <img src="images/optika-cabinet.jpg" alt="Кабинет проверки зрения" class="priem-photo">
-            <p class="priem-photo-caption">Кабинет — авторефкератометр и рабочее место оптометриста</p>
-          </div>
+        <p class="lead">Некоторые пациенты удивляются: зачем целый час на подбор очков? Расскажу подробно — считаю важным, чтобы вы знали, что вас ждёт.</p>
+
+        <img src="images/optika-hall.jpg" alt="Пробный набор очковых линз и пробная оправа для проверки зрения" class="priem-photo">
+        <p class="priem-photo-caption">Пробный набор линз и пробная оправа — с их помощью подбирается коррекция</p>
+
+        <div class="section-icon-heading" style="margin-top:2rem">
+          <img src="images/do_projoma_anketa.png" alt="" aria-hidden="true" style="width:40px;height:40px">
+          <h2>До приёма: анкета</h2>
         </div>
-        <div class="step-item">
-          <div class="step-item__num">3</div>
-          <div class="step-item__body">
-            <h3>Подбор очков</h3>
-            <p>Учитываю запрос и особенности зрительной работы: расстояние до монитора, до швейной машинки, до холста. Процессу подбора уделяю столько времени, сколько нужно — это нормально.</p>
-          </div>
+        <p>При записи я прошу заполнить <strong>анкету</strong> — с вопросами о целях визита, последнем посещении офтальмолога, наличии заболеваний и состояний, которые могут влиять на зрение. Жду честных и развёрнутых ответов: от этого во многом зависит качество консультации.</p>
+        <p>Когда получаю анкету — изучаю её, и если есть вопросы, могу уточнить их <strong>до приёма</strong>.</p>
+        <div class="insight">Если не собрать анамнез заранее, можно начать обследование — и посередине понять, что продолжать бессмысленно: пациента всё равно нужно направить к офтальмологу. Анкета экономит время и деньги.</div>
+        <p>После получения анкеты я отправляю подтверждение: дату, время, адрес, стоимость приёма и инструкции по подготовке.</p>
+
+        <div class="section-icon-heading" style="margin-top:2rem">
+          <img src="images/anamnez.png" alt="" aria-hidden="true" style="width:40px;height:40px">
+          <h2>Анамнез и объяснение</h2>
         </div>
-        <div class="step-item">
-          <div class="step-item__num">4</div>
-          <div class="step-item__body">
-            <h3>Рекомендации и сопровождение</h3>
-            <p>По итогам обследования распечатываю карточку с результатами и рекомендациями. Даю схему адаптации к новым очкам, а в сложных случаях — стратегию постепенной смены коррекции.</p>
-            <p>Если остаётся время — провожаю в оптику. Помогаю выбрать оправу, подбираю линзы под бюджет и задачи, проверяю посадку, делаю разметку.</p>
-            <p>После получения очков <strong>я остаюсь на связи</strong> — можно писать и спрашивать, отвечу в свободное время.</p>
+        <p>Четыре этапа консультации:</p>
+
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-item__num">1</div>
+            <div class="step-item__body">
+              <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+                <h3 style="margin:0">Анамнез и объяснение</h3>
+              </div>
+              <p>Подробно расспрашиваю о перенесённых заболеваниях, травмах, жалобах — и об истории зрения: с какого возраста упало, как носили очки, когда меняли.</p>
+              <p>Потом почти всегда <strong>рисую</strong> — глаз и ход лучей (да-да, физика 8 класса). На схеме объясняю, почему сейчас видно так, и что изменится после коррекции.</p>
+              <div class="insight">Около 80% пациентов не понимают, почему им нужны очки — просто носят, потому что врач сказал. Когда человек понимает, что происходит с его зрением, уходит тревога и появляется осознанность. Я уделяю этому время сознательно.</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-item__num">2</div>
+            <div class="step-item__body">
+              <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+                <img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain">
+                <h3 style="margin:0">Обследование</h3>
+              </div>
+              <ul>
+                <li><strong>Объективная рефракция</strong> — авторефкератометр считывает показатели глаза, пока вы смотрите на воздушный шар внутри прибора.</li>
+                <li><strong>Субъективная рефракция</strong> — с помощью пробного набора линз и пробной оправы проверяется острота зрения.</li>
+              </ul>
+              <img src="images/optika-cabinet.jpg" alt="Кабинет проверки зрения" class="priem-photo">
+              <p class="priem-photo-caption">Кабинет — авторефкератометр и рабочее место оптометриста</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-item__num">3</div>
+            <div class="step-item__body">
+              <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+                <img src="images/podbor_ockov.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain">
+                <h3 style="margin:0">Подбор очков</h3>
+              </div>
+              <p>Учитываю запрос и особенности зрительной работы: расстояние до монитора, до швейной машинки, до холста. Процессу подбора уделяю столько времени, сколько нужно — это нормально.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-item__num">4</div>
+            <div class="step-item__body">
+              <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.5rem">
+                <img src="images/rekomendaciji.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain">
+                <h3 style="margin:0">Рекомендации и сопровождение</h3>
+              </div>
+              <p>По итогам обследования распечатываю карточку с результатами и рекомендациями. Даю схему адаптации к новым очкам, а в сложных случаях — стратегию постепенной смены коррекции.</p>
+              <p>Если остаётся время — провожаю в оптику. Помогаю выбрать оправу, подбираю линзы под бюджет и задачи, проверяю посадку, делаю разметку.</p>
+              <p>После получения очков <strong>я остаюсь на связи</strong> — можно писать и спрашивать, отвечу в свободное время.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -128,33 +169,59 @@
   </div>
 </section>
 
+<!-- КАК ПОДГОТОВИТЬСЯ -->
 <section class="section section--gray" id="podgotovka">
   <div class="container">
     <div style="max-width:720px">
-      <p class="section-label">Перед приёмом</p>
-      <h2 class="section-title">Как подготовиться</h2>
+      <div class="section-icon-heading">
+        <img src="images/kak_podgotovitsja.png" alt="" aria-hidden="true" style="width:48px;height:48px">
+        <div>
+          <p class="section-label" style="margin-bottom:0.2rem">Перед приёмом</p>
+          <h2 class="section-title" style="margin:0">Как подготовиться</h2>
+        </div>
+      </div>
       <div class="podgotovka-list">
         <div class="podgotovka-item">
-          <div class="podgotovka-item__icon">⏱</div>
-          <div><h4>Длительность и стоимость</h4><p>Приём длится <strong>1 час</strong>. Стоимость — <strong>3 000 динар</strong>, оплата наличными. Очки и линзы можно оплатить картой.</p></div>
+          <img src="images/glasses.png" alt="" aria-hidden="true" class="podgotovka-item__img">
+          <div><h4>Возьмите всё, что есть</h4><p>Все очки с диоптриями, обследования от врача — даже старые и сломанные. Это важно для корректного подбора коррекции.</p></div>
         </div>
         <div class="podgotovka-item">
-          <div class="podgotovka-item__icon">👓</div>
-          <div><h4>Возьмите всё, что есть</h4><p>Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные. Это важно для корректного подбора коррекции.</p></div>
-        </div>
-        <div class="podgotovka-item">
-          <img src="images/otdohnite_ot_ekrana.jpg" alt="" aria-hidden="true" class="podgotovka-item__img">
+          <img src="images/otdohnite.png" alt="" aria-hidden="true" class="podgotovka-item__img">
           <div><h4>Отдохните от экрана</h4><p>За 30 минут до приёма прекратите активную зрительную нагрузку — перестаньте работать за компьютером или телефоном, дайте глазам отдохнуть.</p></div>
         </div>
         <div class="podgotovka-item">
-          <div class="podgotovka-item__icon">🔵</div>
+          <img src="images/snimite_linzi.png" alt="" aria-hidden="true" class="podgotovka-item__img">
           <div><h4>Снимите контактные линзы</h4><p>За 20 минут до приёма снимите линзы, чтобы глаза отдохнули. Можно снять прямо в оптике — возьмите контейнер и раствор и придите за 20 минут до назначенного времени.</p></div>
         </div>
         <div class="podgotovka-item">
-          <div class="podgotovka-item__icon">❤️</div>
+          <img src="images/eali_plani_izmenilis.png" alt="" aria-hidden="true" class="podgotovka-item__img">
           <div><h4>Если планы изменились</h4><p>Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем. Если остались вопросы до приёма — тоже пишите, обсудим.</p></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- КАК ЗАПИСАТЬСЯ -->
+<section class="section section--white" id="kak-zapisatsja">
+  <div class="container">
+    <div style="max-width:720px">
+      <div class="section-icon-heading">
+        <img src="images/kak_zapisatsja.png" alt="" aria-hidden="true" style="width:48px;height:48px">
+        <div>
+          <p class="section-label" style="margin-bottom:0.2rem">Онлайн-запись</p>
+          <h2 class="section-title" style="margin:0">Как записаться</h2>
+        </div>
+      </div>
+      <ol class="zapis-steps" style="padding-left:1.5rem;margin-bottom:1.5rem">
+        <li>Выберите вид консультации</li>
+        <li>Выберите свободный слот в календаре</li>
+        <li>Заполните анкету</li>
+        <li>Нажмите кнопку <strong>«Написать боту»</strong> — бот пришлёт подтверждение в Telegram</li>
+        <li>Получите подтверждение о записи</li>
+      </ol>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
+      <p style="margin-top:1rem;font-size:0.9rem;color:var(--color-text-muted)">Или напишите напрямую: <a href="https://t.me/AnnaNvslv" target="_blank">@AnnaNvslv</a> в Telegram</p>
     </div>
   </div>
 </section>
@@ -163,7 +230,7 @@
   <div class="container cta-section__inner">
     <h2>Записаться на приём</h2>
     <p>Приём длится 1 час. Принимаю в Нови Саде, в оптике Ginter.</p>
-    <a href="zapis.html" class="btn">Записаться</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
   </div>
 </section>
 
@@ -178,10 +245,10 @@
         <p class="footer__heading">Навигация</p>
         <ul class="footer__links">
           <li><a href="obo-mne.html">Обо мне</a></li>
-          <li><a href="priem.html">Как проходит приём</a></li>
           <li><a href="uslugi.html">Услуги и цены</a></li>
+          <li><a href="priem.html">Как проходит приём</a></li>
           <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="zapis.html">Записаться</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
           <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
         </ul>
       </div>
