@@ -11,9 +11,8 @@
   <link rel="stylesheet" href="css/pages/home.css">
   <style>
     .priem-article { max-width: 720px; }
-    .priem-article h1 { margin-bottom: 0.5rem; }
     .priem-article .lead { font-size: 1.1rem; color: var(--color-text-muted); line-height: 1.8; margin-bottom: 2rem; font-weight: 300; }
-    .priem-article h2 { font-size: 1.15rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+    .priem-article h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-top: 2.5rem; margin-bottom: 0.75rem; }
     .priem-article p { line-height: 1.85; margin-bottom: 1rem; }
     .priem-article ul { padding-left: 1.25rem; margin-bottom: 1rem; }
     .priem-article ul li { line-height: 1.8; margin-bottom: 0.4rem; }
@@ -24,13 +23,20 @@
     .step-item { display: flex; gap: 1.25rem; padding: 1.5rem 0; border-bottom: 1px solid var(--color-border); }
     .step-item:last-child { border-bottom: none; }
     .step-item__num { font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--color-accent-light); min-width: 48px; line-height: 1; padding-top: 4px; letter-spacing: -0.02em; }
-    .step-item__body h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .step-item__body h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); margin-bottom: 0.5rem; }
     .step-item__body p { font-size: 0.9rem; margin-bottom: 0.6rem; }
     .step-item__body ul { font-size: 0.9rem; padding-left: 1.1rem; margin-bottom: 0.5rem; }
     .step-item__body ul li { margin-bottom: 0.3rem; line-height: 1.7; }
     .step-item__body .priem-photo { margin-top: 1rem; margin-bottom: 0.5rem; }
     .step-item__body .priem-photo-caption { margin-bottom: 0.75rem; }
     @media (max-width: 600px) { .step-item { gap: 0.9rem; } .step-item__num { font-size: 1.5rem; min-width: 36px; } }
+
+    /* Подготовка */
+    .podgotovka-list { display: flex; flex-direction: column; gap: 1px; background: var(--color-border); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+    .podgotovka-item { display: flex; gap: 1.25rem; align-items: flex-start; background: var(--color-bg-white); padding: 1.25rem 1.5rem; }
+    .podgotovka-item__icon { font-size: 1.3rem; min-width: 32px; padding-top: 3px; }
+    .podgotovka-item h4 { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.25rem; }
+    .podgotovka-item p { font-size: 0.95rem; margin: 0; }
   </style>
 </head>
 <body>
@@ -45,7 +51,7 @@
       <li><a href="o-zrenii.html">О зрении</a></li>
       <li><a href="zapis.html">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Записаться</a>
+    <a href="zapis.html" class="btn nav__cta">Онлайн-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -88,7 +94,7 @@
               <li><strong>Объективная рефракция</strong> — авторефкератометр считывает показатели глаза, пока вы смотрите на воздушный шар внутри прибора.</li>
               <li><strong>Субъективная рефракция</strong> — с помощью пробного набора линз и пробной оправы проверяется острота зрения: пациент называет цифры на экране с разными подставленными линзами.</li>
             </ul>
-            <img src="images/optika-cabinet.jpg" alt="Кабинет проверки зрения — авторефкератометр и кресло специалиста" class="priem-photo">
+            <img src="images/optika-cabinet.jpg" alt="Кабинет проверки зрения" class="priem-photo">
             <p class="priem-photo-caption">Кабинет — авторефкератометр и рабочее место оптометриста</p>
           </div>
         </div>
@@ -113,12 +119,60 @@
   </div>
 </section>
 
+<!-- КАК ПОДГОТОВИТЬСЯ -->
+<section class="section section--gray" id="podgotovka">
+  <div class="container">
+    <div style="max-width:720px">
+      <p class="section-label">Перед приёмом</p>
+      <h2 class="section-title">Как подготовиться к приёму</h2>
+
+      <div class="podgotovka-list">
+        <div class="podgotovka-item">
+          <div class="podgotovka-item__icon">⏱</div>
+          <div>
+            <h4>Длительность и стоимость</h4>
+            <p>Приём длится <strong>1 час</strong>. Стоимость — <strong>3 000 динар</strong>, оплата наличными. Очки и линзы можно оплатить картой.</p>
+          </div>
+        </div>
+        <div class="podgotovka-item">
+          <div class="podgotovka-item__icon">👓</div>
+          <div>
+            <h4>Возьмите всё, что есть</h4>
+            <p>Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные. Это важно для корректного подбора коррекции.</p>
+          </div>
+        </div>
+        <div class="podgotovka-item">
+          <div class="podgotovka-item__icon">💻</div>
+          <div>
+            <h4>Отдохните от экрана</h4>
+            <p>За 30 минут до приёма прекратите активную зрительную нагрузку — перестаньте работать за компьютером или телефоном, дайте глазам отдохнуть.</p>
+          </div>
+        </div>
+        <div class="podgotovka-item">
+          <div class="podgotovka-item__icon">🔵</div>
+          <div>
+            <h4>Снимите контактные линзы</h4>
+            <p>За 20 минут до приёма снимите линзы, чтобы глаза отдохнули. Можно снять прямо в оптике — возьмите контейнер и раствор и придите за 20 минут до назначенного времени.</p>
+          </div>
+        </div>
+        <div class="podgotovka-item">
+          <div class="podgotovka-item__icon">❤️</div>
+          <div>
+            <h4>Если планы изменились</h4>
+            <p>Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем. Если остались вопросы до приёма — тоже пишите, обсудим. До встречи!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section cta-section">
   <div class="container">
     <div class="cta-section__inner">
       <h2>Записаться на приём</h2>
       <p>Консультация длится 1 час. Принимаю в Нови Саде, в оптике Ginter.</p>
-      <a href="zapis.html" class="btn">Записаться</a>
+      <a href="zapis.html" class="btn">Онлайн-запись</a>
     </div>
   </div>
 </section>
