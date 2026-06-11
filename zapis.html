@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Онлайн-запись — Анна Новосёлова</title>
-  <meta name="description" content="Записьтесь на приём к оптометристу Анне Новосёловой в Нови Саде. Оптика Ginter.">
+  <meta name="description" content="Запишитесь на приём к оптометристу Анне Новосёловой в Нови Саде. Оптика Ginter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -15,7 +17,14 @@
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">Анна Новосёлова<span>Оптометрист · Нови Сад</span></a>
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html">Обо мне</a></li>
@@ -24,12 +33,11 @@
       <li><a href="o-zrenii.html">О зрении</a></li>
       <li><a href="zapis.html" class="active">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Онлайн-запись</a>
+    <a href="zapis.html" class="btn nav__cta">Записаться</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="zapis-hero">
   <div class="container">
     <p class="section-label">Онлайн-запись</p>
@@ -38,7 +46,6 @@
   </div>
 </section>
 
-<!-- КАК ЗАПИСАТЬСЯ -->
 <section class="section section--white">
   <div class="container">
     <p class="section-label">Как записаться</p>
@@ -50,11 +57,10 @@
       <li>Нажмите кнопку <strong>«Написать боту»</strong> — бот пришлёт подтверждение в Telegram</li>
       <li>Получите подтверждение о записи</li>
     </ol>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:2rem;display:inline-block">Онлайн-запись →</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:2rem;display:inline-block">Онлайн-запись</a>
   </div>
 </section>
 
-<!-- ТЕЛЕГРАМ -->
 <section class="section section--gray">
   <div class="container">
     <div class="zapis-tg">
@@ -63,60 +69,28 @@
       </div>
       <div class="zapis-tg__body">
         <h3>Есть вопросы?</h3>
-        <p>Если есть вопросы — напишите мне напрямую в Telegram, я обязательно отвечу.</p>
-        <a href="https://t.me/AnnaNvslv" class="zapis-tg__link" target="_blank">@AnnaNvslv →</a>
+        <p>Напишите мне напрямую в Telegram — я обязательно отвечу.</p>
+        <a href="https://t.me/AnnaNvslv" class="zapis-tg__link" target="_blank">@AnnaNvslv</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- КАК ПОДГОТОВИТЬСЯ -->
 <section class="section section--white">
   <div class="container zapis-info">
     <p class="section-label">Перед приёмом</p>
-    <h2 class="section-title">Как подготовиться к приёму</h2>
+    <h2 class="section-title">Как подготовиться</h2>
     <p style="margin-bottom:1.5rem">Подробная инструкция — <a href="priem.html#podgotovka">на странице «Приём»</a>.</p>
     <div class="zapis-checklist">
-      <div class="zapis-check">
-        <span class="zapis-check__icon">⏱</span>
-        <div>
-          <h4>Длительность — 1 час</h4>
-          <p>Стоимость приёма: 3 000 динар, оплата наличными. Очки и линзы можно оплатить картой.</p>
-        </div>
-      </div>
-      <div class="zapis-check">
-        <span class="zapis-check__icon">👓</span>
-        <div>
-          <h4>Возьмите все очки</h4>
-          <p>Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные. Это важно для корректного подбора.</p>
-        </div>
-      </div>
-      <div class="zapis-check">
-        <span class="zapis-check__icon">💻</span>
-        <div>
-          <h4>Отдохните от экрана</h4>
-          <p>За 30 минут до приёма прекратите активную зрительную нагрузку — перестаньте работать за компьютером или телефоном.</p>
-        </div>
-      </div>
-      <div class="zapis-check">
-        <span class="zapis-check__icon">🔵</span>
-        <div>
-          <h4>Снимите контактные линзы</h4>
-          <p>За 20 минут до приёма снимите линзы, чтобы глаза отдохнули. Можно снять их прямо в оптике — возьмите контейнер и раствор, придите за 20 минут до назначенного времени.</p>
-        </div>
-      </div>
-      <div class="zapis-check">
-        <span class="zapis-check__icon">❤️</span>
-        <div>
-          <h4>Если планы изменились</h4>
-          <p>Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем.</p>
-        </div>
-      </div>
+      <div class="zapis-check"><span class="zapis-check__icon">⏱</span><div><h4>Длительность — 1 час</h4><p>Стоимость: 3 000 динар, оплата наличными. Очки и линзы можно оплатить картой.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">👓</span><div><h4>Возьмите все очки</h4><p>Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">💻</span><div><h4>Отдохните от экрана</h4><p>За 30 минут до приёма прекратите активную зрительную нагрузку.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">🔵</span><div><h4>Снимите контактные линзы</h4><p>За 20 минут до приёма — возьмите контейнер и раствор.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">❤️</span><div><h4>Если планы изменились</h4><p>Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- АДРЕС -->
 <section class="section section--gray">
   <div class="container zapis-address">
     <p class="section-label">Как добраться</p>
@@ -158,7 +132,6 @@
     </div>
   </div>
 </footer>
-
 <script src="js/nav.js"></script>
 </body>
 </html>
