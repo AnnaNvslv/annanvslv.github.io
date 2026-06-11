@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .payment-block { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-top: 1.5rem; }
+    .payment-block h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .payment-block p { margin-bottom: 0.4rem; font-size: 0.95rem; line-height: 1.7; }
+    .payment-block p:last-child { margin-bottom: 0; }
+  </style>
 </head>
 <body>
 <nav class="nav">
@@ -27,12 +33,11 @@
     <ul class="nav__links">
       <li><a href="index.html">Главная</a></li>
       <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="priem.html">Приём</a></li>
       <li><a href="uslugi.html" class="active">Услуги и цены</a></li>
+      <li><a href="priem.html">Как проходит приём</a></li>
       <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="zapis.html">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Записаться</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -40,13 +45,19 @@
 <section class="section section--white" style="padding-top:5rem">
   <div class="container">
     <p class="section-label">Услуги и цены</p>
-    <h1 style="margin-bottom:0.5rem">Стоимость приёма</h1>
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:0.5rem">
+      <img src="images/stoimost.png" alt="" aria-hidden="true" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;margin-top:0.25rem">
+      <h1 style="margin:0">Стоимость приёма</h1>
+    </div>
     <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8">Все приёмы проходят в оптике Ginter, Нови Сад. Запись обязательна.</p>
 
     <div class="prices__list">
       <div class="price-item">
         <div class="price-item__info">
-          <h4>Первичный приём</h4>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem">
+            <img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
+            <h4 style="margin:0">Первичный приём</h4>
+          </div>
           <p>Полное обследование зрения, подбор очков или контактных линз, рекомендации, помощь с заказом в оптике.</p>
           <span class="price-item__time">60 минут</span>
         </div>
@@ -54,7 +65,10 @@
       </div>
       <div class="price-item">
         <div class="price-item__info">
-          <h4>Повторный приём</h4>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem">
+            <img src="images/povtornij_projom.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
+            <h4 style="margin:0">Повторный приём</h4>
+          </div>
           <p>Контроль зрения, корректировка подбора, повторные рекомендации. В течение 6 месяцев после первичного.</p>
           <span class="price-item__time">60 минут</span>
         </div>
@@ -62,28 +76,56 @@
       </div>
       <div class="price-item">
         <div class="price-item__info">
-          <h4>Консультация в оптике</h4>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem">
+            <img src="images/konsultacija.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
+            <h4 style="margin:0">Консультация в оптике</h4>
+          </div>
           <p>Помощь с выбором оправы и линз, проверка готовых очков, второе мнение — без проверки зрения.</p>
           <span class="price-item__time">30 минут</span>
         </div>
         <div class="price-item__cost">1 000 <span>дин</span></div>
       </div>
+      <div class="price-item">
+        <div class="price-item__info">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem">
+            <img src="images/contact_lenses.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
+            <h4 style="margin:0">Проверка зрения и подбор контактных линз с обучением</h4>
+          </div>
+          <p>Полное обследование, подбор контактных линз с примеркой, обучение надеванию и уходу.</p>
+          <span class="price-item__time">90–20 минут</span>
+        </div>
+        <div class="price-item__cost">3 500 <span>дин</span></div>
+      </div>
       <div class="price-item price-item--free">
         <div class="price-item__info">
-          <h4>Помощь при оформлении заказа</h4>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem">
+            <img src="images/pomosch_v_oformlenii.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
+            <h4 style="margin:0">Помощь при оформлении заказа</h4>
+          </div>
           <p>Помогу выбрать оправу и линзы под ваш бюджет, оформить заказ в оптике.</p>
         </div>
         <div class="price-item__cost price-item__cost--free">Бесплатно</div>
       </div>
     </div>
-    <p class="prices__note">Оплата только наличными · Запись обязательна</p>
+
+    <!-- ОПЛАТА -->
+    <div class="payment-block">
+      <h3>Оплата</h3>
+      <p>Оплата за консультацию — наличными. Заказанные очки и линзы можно картой или наличными.</p>
+      <p>Оплата за очки и контактные линзы возможна при получении заказа.</p>
+    </div>
+
+    <p class="prices__note" style="margin-top:1rem">Запись обязательна</p>
   </div>
 </section>
 
 <section class="section section--gray">
   <div class="container">
     <p class="section-label">Что входит в приём</p>
-    <h2 class="section-title">Из чего состоит приём</h2>
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem">
+      <img src="images/kaka_prohodit_prijom.png" alt="" aria-hidden="true" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;margin-top:0.25rem">
+      <h2 class="section-title" style="margin:0">Из чего состоит приём</h2>
+    </div>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
@@ -123,7 +165,7 @@
     <div class="cta-section__inner">
       <h2>Записаться на приём</h2>
       <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
-      <a href="zapis.html" class="btn">Записаться</a>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
     </div>
   </div>
 </section>
@@ -139,10 +181,10 @@
         <p class="footer__heading">Навигация</p>
         <ul class="footer__links">
           <li><a href="obo-mne.html">Обо мне</a></li>
-          <li><a href="priem.html">Как проходит приём</a></li>
           <li><a href="uslugi.html">Услуги и цены</a></li>
+          <li><a href="priem.html">Как проходит приём</a></li>
           <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="zapis.html">Записаться</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
           <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
         </ul>
       </div>
