@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/about.css">
   <style>
-    .toc { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; max-width: 400px; }
+    .toc { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 2rem; display: inline-block; min-width: 280px; max-width: 400px; }
     .toc__title { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 0.75rem; }
-    .toc__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+    .toc__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.25rem; counter-reset: toc; }
+    .toc__list li { display: flex; gap: 0.5rem; }
+    .toc__list li::before { counter-increment: toc; content: counter(toc) "."; font-size: 0.95rem; color: var(--color-text-muted); min-width: 1.25rem; }
     .toc__list li a { font-size: 0.95rem; color: var(--color-accent); text-decoration: none; }
     .toc__list li a:hover { text-decoration: underline; }
   </style>
@@ -44,6 +46,22 @@
   </div>
 </nav>
 
+<!-- TOC вверху страницы -->
+<section class="section section--white" style="padding-top:5rem;padding-bottom:0">
+  <div class="container">
+    <p class="section-label">Обо мне</p>
+    <nav class="toc" aria-label="Оглавление">
+      <div class="toc__title">На этой странице</div>
+      <ul class="toc__list">
+        <li><a href="#obo-mne">Обо мне</a></li>
+        <li><a href="#obrazovanie">Образование и опыт</a></li>
+        <li><a href="#diplomy">Дипломы</a></li>
+        <li><a href="#podxod">Мой подход</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
 <!-- HERO -->
 <section class="about-hero" id="obo-mne">
   <div class="container">
@@ -52,25 +70,12 @@
         <img src="photo_2026-05-13_02-29-32.jpg" alt="Анна Новосёлова, оптометрист" />
       </div>
       <div class="about-hero__content">
-        <p class="section-label">Обо мне</p>
         <h1>Анна Новосёлова</h1>
         <p class="about-hero__role">Медицинский оптик · Оптометрист</p>
         <p>Я специалист по проверке зрения, подбору очков и контактных линз.</p>
         <p>Помогаю разобраться со зрением: от первичной проверки до подбора коррекции — в том числе в сложных случаях: астигматизм, большая разница между глазами, сложности с привыканием к очкам.</p>
         <p>Работаю в оптике с 2004 года. В 2014 получила классическое медицинское образование по специальности медицинский оптик, оптометрист. Работала в Санкт-Петербурге как с пациентами, так и мастером по изготовлению очков.</p>
         <p>После переезда в Сербию в 2024 году продолжаю практику в Нови Саде. Веду офлайн-приём в оптике Ginter и онлайн-консультации. Придерживаюсь принципов доказательной медицины. Вижу в каждом пациенте человека!</p>
-
-        <!-- ОГЛАВЛЕНИЕ -->
-        <nav class="toc" aria-label="Оглавление">
-          <div class="toc__title">На этой странице</div>
-          <ul class="toc__list">
-            <li><a href="#obo-mne">Обо мне</a></li>
-            <li><a href="#obrazovanie">Образование и опыт</a></li>
-            <li><a href="#diplomy">Дипломы</a></li>
-            <li><a href="#podxod">Мой подход</a></li>
-          </ul>
-        </nav>
-
         <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Записаться на приём</a>
       </div>
     </div>
@@ -86,29 +91,17 @@
       <h2 class="section-title" style="margin-bottom:0">Квалификация</h2>
     </div>
     <div class="about-facts">
-      <div class="about-fact">
-        <div class="about-fact__num">20+</div>
-        <div class="about-fact__text">лет работы в оптике</div>
-      </div>
-      <div class="about-fact">
-        <div class="about-fact__num">11+</div>
-        <div class="about-fact__text">лет практики оптометрии</div>
-      </div>
+      <div class="about-fact"><div class="about-fact__num">20+</div><div class="about-fact__text">лет работы в оптике</div></div>
+      <div class="about-fact"><div class="about-fact__num">11+</div><div class="about-fact__text">лет практики оптометрии</div></div>
     </div>
     <div class="about-edu">
       <div class="about-edu__item">
         <div class="about-edu__year">2014</div>
-        <div>
-          <h4>Медицинский оптик</h4>
-          <p>СПБ МТК — Санкт-Петербургский медико-технический колледж</p>
-        </div>
+        <div><h4>Медицинский оптик</h4><p>СПБ МТК — Санкт-Петербургский медико-технический колледж</p></div>
       </div>
       <div class="about-edu__item">
         <div class="about-edu__year">2015</div>
-        <div>
-          <h4>Оптометрист</h4>
-          <p>СПБ МТК — специализация в области оптометрии</p>
-        </div>
+        <div><h4>Оптометрист</h4><p>СПБ МТК — специализация в области оптометрии</p></div>
       </div>
     </div>
     <div class="about-docs" id="diplomy">
@@ -168,7 +161,6 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="section cta-section">
   <div class="container cta-section__inner">
     <h2>Записаться на приём</h2>
@@ -200,9 +192,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer__bottom">
-      Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a>
-    </div>
+    <div class="footer__bottom">Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a></div>
   </div>
 </footer>
 <script src="js/nav.js"></script>
