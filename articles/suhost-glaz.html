@@ -34,15 +34,22 @@
 <body>
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="../index.html" class="nav__logo">Анна Новосёлова<span>Оптометрист · Нови Сад</span></a>
+    <a href="../index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="../index.html">Главная</a></li>
       <li><a href="../obo-mne.html">Обо мне</a></li>
-      <li><a href="../priem.html">Приём</a></li>
+      <li><a href="../uslugi.html">Услуги и цены</a></li>
+      <li><a href="../priem.html">Как проходит приём</a></li>
       <li><a href="../o-zrenii.html" class="active">О зрении</a></li>
-      <li><a href="../zapis.html">Запись</a></li>
     </ul>
-    <a href="../zapis.html" class="btn nav__cta">Записаться</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -52,6 +59,8 @@
   <div class="article__tag">Уход за глазами</div>
   <h1 class="article__title">Сухость глаз: какие капли выбрать?</h1>
   <div class="article__meta">9 июня 2026 · Анна Новосёлова</div>
+
+  <img src="../images/suhost-glaz.png" alt="Сухость глаз" class="article__hero">
 
   <div class="article__body">
     <p>Жжение, покраснение, ощущение песка в глазах, усталость к вечеру, дискомфорт при работе за компьютером или в контактных линзах — всё это может быть связано с синдромом сухого глаза.</p>
@@ -129,7 +138,29 @@
   </div>
 </div>
 
-<footer class="footer"><div class="container"><div class="footer__bottom">Оптика Ginter · Trg Republike 25, Novi Sad</div></div></footer>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Анна Новосёлова</div>
+        <p class="footer__tagline">Оптометрист в Нови Саде.<br>Приём на русском языке.</p>
+      </div>
+      <div>
+        <p class="footer__heading">Навигация</p>
+        <ul class="footer__links">
+          <li><a href="../obo-mne.html">Обо мне</a></li>
+          <li><a href="../uslugi.html">Услуги и цены</a></li>
+          <li><a href="../priem.html">Как проходит приём</a></li>
+          <li><a href="../o-zrenii.html">О зрении</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a>
+    </div>
+  </div>
+</footer>
 <script src="../js/nav.js"></script>
 </body>
 </html>
