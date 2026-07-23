@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Услуги и цены — Анна Новосёлова</title>
-  <meta name="description" content="Стоимость приёма оптометриста в Нови Саде. Первичный и повторный приём, подбор очков и контактных линз. Оптика Ginter.">
+  <meta name="description" content="Стоимость приёма оптометриста в Нови Саде. Первичный и повторный приём, подбор очков и контактных линз, контрольный визит. Оптика Ginter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -13,10 +13,36 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
   <style>
-    .payment-block { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-top: 1.5rem; }
-    .payment-block h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
-    .payment-block p { margin-bottom: 0.4rem; font-size: 0.95rem; line-height: 1.7; }
-    .payment-block p:last-child { margin-bottom: 0; }
+    /* payment block */
+    .payment-block { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.75rem; margin-top: 2rem; }
+    .payment-block h3 { font-size: 1.1rem; margin-bottom: 1.15rem; }
+    .payment-row { display: flex; gap: 0.9rem; align-items: flex-start; }
+    .payment-row + .payment-row { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+    .payment-row__icon { font-size: 22px; line-height: 1; flex-shrink: 0; width: 28px; text-align: center; }
+    .payment-row__body h4 { margin: 0 0 0.25rem; font-size: 0.95rem; }
+    .payment-row__body p { margin: 0; font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; }
+
+    /* service icon */
+    .svc-icon-emoji { font-size: 22px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+    /* accordions inside price cards */
+    .svc-acc { margin-top: 1rem; border-top: 1px solid var(--color-border); padding-top: 0.85rem; }
+    .svc-acc summary { cursor: pointer; font-size: 0.88rem; font-weight: 600; color: var(--color-accent); list-style: none; display: flex; align-items: center; gap: 0.4rem; }
+    .svc-acc summary::-webkit-details-marker { display: none; }
+    .svc-acc summary::after { content: '▾'; font-size: 0.75em; transition: transform .2s; margin-left: auto; color: var(--color-text-light); }
+    .svc-acc[open] summary::after { transform: rotate(180deg); }
+    .svc-acc + .svc-acc { margin-top: 0.6rem; padding-top: 0.6rem; }
+    .svc-acc ul { margin: 0.85rem 0 0; padding-left: 1.15rem; }
+    .svc-acc ul li { font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.35rem; color: var(--color-text); }
+    .svc-note { margin-top: 0.85rem; font-size: 0.82rem; line-height: 1.7; color: var(--color-text-muted); background: var(--color-bg-section); border-left: 3px solid var(--color-accent-light); padding: 0.75rem 1rem; }
+    .svc-result { margin-top: 0.85rem; font-size: 0.88rem; line-height: 1.7; color: var(--color-text); }
+    .svc-group { margin-top: 0.85rem; }
+    .svc-group__title { font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.4rem; }
+    .svc-group.green .svc-group__title { color: var(--color-teal); }
+    .svc-group.blue .svc-group__title { color: var(--color-accent); }
+    .svc-link { margin-top: 0.85rem; }
+    .svc-link a { font-size: 0.85rem; color: var(--color-accent); text-decoration: none; font-weight: 600; }
+    .svc-link a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -49,54 +75,149 @@
       <img src="images/stoimost.png" alt="" aria-hidden="true" style="width:44px;height:44px;object-fit:contain;flex-shrink:0">
       <h1 style="margin:0">Стоимость приёма</h1>
     </div>
-    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8">Все приёмы проходят в оптике Ginter, Нови Сад. Запись обязательна.</p>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8">Я принимаю в Оптике Ginter, в центре Нови Сада. Запись обязательна.</p>
 
     <div class="prices__list">
+
       <div class="price-item">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Первичный приём</h4></div>
-          <p>Полное обследование зрения, подбор очков или контактных линз, рекомендации, помощь с заказом в оптике.</p>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Проверка зрения, подбор очков и контактных линз</h4></div>
+          <p>Часовая консультация с обследованием и подбором очков и контактных линз.</p>
           <span class="price-item__time">60 минут</span>
+          <details class="svc-acc">
+            <summary>Что входит в приём</summary>
+            <ul>
+              <li>Подробный сбор анамнеза</li>
+              <li>Обследование на авторефкератометре (объективная рефракция)</li>
+              <li>Проверка остроты зрения</li>
+              <li>Субъективная проверка рефракции пробным набором линз</li>
+              <li>Подбор очков с учётом особенностей зрительной работы</li>
+              <li>Рекомендации и разъяснения по вашей ситуации</li>
+              <li>Сопровождение в оптике при заказе очков</li>
+            </ul>
+            <div class="svc-note">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
+            <div class="svc-link"><a href="priem.html">О том, как проходит приём →</a></div>
+          </details>
         </div>
         <div class="price-item__cost">3 000 <span>дин</span></div>
       </div>
+
+      <div class="price-item">
+        <div class="price-item__info">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/contact_lenses.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Проверка зрения, подбор и обучение контактных линз</h4></div>
+          <p>Включает практическое обучение надеванию и снятию линз.</p>
+          <span class="price-item__time">90–120 минут</span>
+          <details class="svc-acc">
+            <summary>Что входит в приём</summary>
+            <ul>
+              <li>Подробный сбор анамнеза</li>
+              <li>Обследование на авторефкератометре</li>
+              <li>Проверка остроты зрения</li>
+              <li>Субъективная проверка рефракции, подбор параметров линз</li>
+              <li>Теоретическая часть: правила безопасного ношения контактных линз</li>
+              <li>Специалист покажет на себе, как надевать и снимать линзу, затем наденет линзу вам</li>
+              <li>Вы будете тренироваться сами под контролем специалиста, пока не начнёт получаться уверенно</li>
+            </ul>
+            <div class="svc-note">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
+            <div class="svc-link"><a href="priem.html">О том, как проходит приём →</a></div>
+          </details>
+        </div>
+        <div class="price-item__cost">3 500 <span>дин</span></div>
+      </div>
+
+      <div class="price-item price-item--free">
+        <div class="price-item__info">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">✅</span><h4 style="margin:0">Контрольный визит</h4></div>
+          <p>Контрольный визит после получения очков.</p>
+          <span class="price-item__time">15 минут</span>
+        </div>
+        <div class="price-item__cost price-item__cost--free">Бесплатно</div>
+      </div>
+
+      <div class="price-item price-item--free">
+        <div class="price-item__info">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/pomosch_v_oformlenii.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Помощь при оформлении заказа</h4></div>
+          <p>Если есть рецепт на очки, но нужна помощь в оптике, в том числе с детскими очками.</p>
+          <span class="price-item__time">15 минут</span>
+          <details class="svc-acc">
+            <summary>Чем могу помочь</summary>
+            <ul>
+              <li>Помощь в подборе оправы</li>
+              <li>Рекомендации по посадке, качеству и техническим ограничениям в соответствии с вашим рецептом</li>
+              <li>Помощь с выбором очковых линз — объясню разницу, подберу варианты под ваш бюджет</li>
+              <li>Ремонт очков</li>
+              <li>Проверка соответствия изготовленных очков вашему рецепту</li>
+            </ul>
+          </details>
+        </div>
+        <div class="price-item__cost price-item__cost--free">Бесплатно</div>
+      </div>
+
       <div class="price-item">
         <div class="price-item__info">
           <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/povtornij_projom.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Повторный приём</h4></div>
-          <p>Контроль зрения, корректировка подбора, повторные рекомендации. В течение 6 месяцев после первичного.</p>
+          <p>В течение 6 месяцев после первичного.</p>
           <span class="price-item__time">60 минут</span>
         </div>
         <div class="price-item__cost">2 000 <span>дин</span></div>
       </div>
-      <div class="price-item">
-        <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/konsultacija.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Консультация в оптике</h4></div>
-          <p>Помощь с выбором оправы и линз, проверка готовых очков, второе мнение — без проверки зрения.</p>
-          <span class="price-item__time">30 минут</span>
-        </div>
-        <div class="price-item__cost">1 000 <span>дин</span></div>
-      </div>
-      <div class="price-item">
-        <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/contact_lenses.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Проверка зрения и подбор контактных линз с обучением</h4></div>
-          <p>Полное обследование, подбор контактных линз с примеркой, обучение надеванию и уходу.</p>
-          <span class="price-item__time">90–120 минут</span>
-        </div>
-        <div class="price-item__cost">3 500 <span>дин</span></div>
-      </div>
+
       <div class="price-item price-item--free">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/pomosch_v_oformlenii.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Помощь при оформлении заказа</h4></div>
-          <p>Помогу выбрать оправу и линзы под ваш бюджет, оформить заказ в оптике.</p>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">🎁</span><h4 style="margin:0">Экспресс-диагностика зрения</h4></div>
+          <p>Экспресс-чекап: нужны ли новые очки (не полноценная проверка зрения).</p>
+          <span class="price-item__time">15 минут</span>
+          <details class="svc-acc">
+            <summary>Что входит</summary>
+            <ul>
+              <li>Авторефрактометрия (проверка на аппарате)</li>
+              <li>Проверка остроты зрения без коррекции</li>
+              <li>Проверка остроты зрения в ваших очках</li>
+            </ul>
+            <div class="svc-result">В результате вы получите: понимание, пора ли заказывать первые очки или менять старые, направление к офтальмологу при необходимости, общие рекомендации по состоянию зрения.</div>
+          </details>
+          <details class="svc-acc">
+            <summary>Подходит ли мне экспресс-проверка?</summary>
+            <div class="svc-group green">
+              <span class="svc-group__title">Подойдёт, если:</span>
+              <ul>
+                <li>Зрение начало портиться, но не уверены — нужны ли очки</li>
+                <li>Очки стали слабоваты</li>
+                <li>Хотите проверить, что очки подобраны верно</li>
+              </ul>
+            </div>
+            <div class="svc-group blue">
+              <span class="svc-group__title">Нужен полноценный приём, если:</span>
+              <ul>
+                <li>Нужен подбор очков/контактных линз, в т.ч. прогрессивных/офисных</li>
+                <li>Давно не проверяли зрение, были сложности с подбором</li>
+                <li>Есть астигматизм, амблиопия, анизометропия и т.п.</li>
+                <li>Пациент младше 20 лет</li>
+              </ul>
+            </div>
+          </details>
         </div>
         <div class="price-item__cost price-item__cost--free">Бесплатно</div>
       </div>
+
     </div>
 
     <div class="payment-block">
       <h3>Оплата</h3>
-      <p>Оплата за консультацию — наличными. Заказанные очки и линзы можно картой или наличными.</p>
-      <p>Оплата за очки и контактные линзы возможна при получении заказа.</p>
+      <div class="payment-row">
+        <div class="payment-row__icon" aria-hidden="true">💵</div>
+        <div class="payment-row__body">
+          <h4>Консультация (приём)</h4>
+          <p>Оплата только наличными.</p>
+        </div>
+      </div>
+      <div class="payment-row">
+        <div class="payment-row__icon" aria-hidden="true">💳</div>
+        <div class="payment-row__body">
+          <h4>Готовые очки и контактные линзы</h4>
+          <p>Можно оплатить картой или наличными — при получении заказа.</p>
+        </div>
+      </div>
     </div>
 
     <div style="margin-top:1.5rem">
