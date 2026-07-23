@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Анна Новосёлова, оптика Ginter</title>
+  <meta name="description" content="Контакты оптики Ginter в Нови Саде: адрес, телефон, режим работы, Telegram и Instagram. Приём оптометриста Анны Новосёловой.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: start; }
+    .contact-list { display: flex; flex-direction: column; gap: 1px; background: var(--color-border); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+    .contact-item { display: flex; gap: 1rem; align-items: flex-start; background: var(--color-bg-white); padding: 1.25rem 1.5rem; }
+    .contact-item__icon { width: 40px; height: 40px; border-radius: 50%; background: var(--color-bg-section); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-item__icon svg { width: 20px; height: 20px; }
+    .contact-item h4 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .contact-item p { margin: 0; font-size: 0.92rem; }
+    .contact-item a { font-weight: 600; }
+    .map-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); background: var(--color-bg-white); }
+    .map-card iframe { width: 100%; height: 380px; border: 0; display: block; }
+    .map-card__footer { padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .map-card__footer p { margin: 0; font-size: 0.85rem; color: var(--color-text-muted); }
+    .map-card__footer a { font-size: 0.9rem; font-weight: 600; }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .map-card iframe { height: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="obo-mne.html">Обо мне</a></li>
+      <li><a href="uslugi.html">Услуги и цены</a></li>
+      <li><a href="priem.html">Как проходит приём</a></li>
+      <li><a href="akcii.html">Акции</a></li>
+      <li><a href="o-zrenii.html">О зрении</a></li>
+      <li><a href="kontakty.html" class="active">Контакты</a></li>
+    </ul>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
+    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="section section--white" style="padding-top:5rem">
+  <div class="container">
+    <p class="section-label">Контакты</p>
+    <h1>Как нас найти</h1>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;max-width:640px">Оптика Ginter в центре Нови Сада — здесь я веду приём. Пишите, звоните или приходите.</p>
+
+    <div class="contact-grid">
+      <div class="contact-list">
+
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+          </div>
+          <div>
+            <h4>Адрес</h4>
+            <p>Оптика Ginter<br>Trg Republike 25, Novi Sad</p>
+            <p style="margin-top:0.5rem"><a href="https://maps.google.com/?q=Trg+Republike+25+Novi+Sad" target="_blank">Открыть на карте →</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </div>
+          <div>
+            <h4>Режим работы</h4>
+            <p>Понедельник — пятница: 09:00–17:00</p>
+            <p>Суббота, воскресенье — выходной</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Телефон оптики</h4>
+            <p><a href="tel:+38121382131">021 38 32 131</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon" style="background:#DDF1FB">
+            <svg viewBox="0 0 24 24" fill="#229ED9"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 6.77-1.9 8.96c-.14.62-.5.77-.99.48l-2.74-2.02-1.32 1.27c-.15.14-.27.26-.54.26l.2-2.79 5.04-4.55c.22-.19-.05-.3-.34-.11L7.44 14.7l-2.7-.84c-.59-.18-.6-.59.12-.87l10.58-4.08c.49-.18.92.11.49 1.76z"/></svg>
+          </div>
+          <div>
+            <h4>Telegram</h4>
+            <p>По всем вопросам — напрямую мне: <a href="https://t.me/AnnaNvslv" target="_blank">@AnnaNvslv</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon" style="background:#FCE4EC">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="#E1306C" stroke="none"/></svg>
+          </div>
+          <div>
+            <h4>Instagram</h4>
+            <p>Фото, акции и новости оптики: <a href="https://instagram.com/optika_ginter" target="_blank">@optika_ginter</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="map-card">
+        <iframe src="https://www.google.com/maps?q=Trg+Republike+25,+Novi+Sad&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Оптика Ginter на карте"></iframe>
+        <div class="map-card__footer">
+          <p>Trg Republike 25, Novi Sad</p>
+          <a href="https://maps.google.com/?q=Trg+Republike+25+Novi+Sad" target="_blank">Открыть в Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-section__inner">
+    <h2>Записаться на приём</h2>
+    <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
+      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Анна Новосёлова</div>
+        <p class="footer__tagline">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
+      </div>
+      <div>
+        <p class="footer__heading">Навигация</p>
+        <ul class="footer__links">
+          <li><a href="obo-mne.html">Обо мне</a></li>
+          <li><a href="uslugi.html">Услуги и цены</a></li>
+          <li><a href="priem.html">Как проходит приём</a></li>
+          <li><a href="akcii.html">Акции</a></li>
+          <li><a href="o-zrenii.html">О зрении</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
+          <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
+          <li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a>
+    </div>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>

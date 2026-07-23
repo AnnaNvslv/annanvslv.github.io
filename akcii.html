@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акции — Анна Новосёлова, оптика Ginter</title>
+  <meta name="description" content="Актуальные акции и спецпредложения на очки, линзы и контактные линзы в оптике Ginter, Нови Сад.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .promo-card { background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: 2rem; margin-bottom: 1.5rem; }
+    .promo-card__badge { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 20px; margin-bottom: 1.1rem; }
+    .promo-card__badge--active { background: #E3F7F0; color: var(--color-teal-dark); }
+    .promo-card__badge--archived { background: var(--color-bg-section); color: var(--color-text-light); }
+    .promo-card__lead { font-size: 1rem; color: var(--color-text-muted); margin-bottom: 1.25rem; }
+    .promo-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+    .promo-code { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; background: var(--color-bg-section); border-left: 3px solid var(--color-teal); padding: 0.9rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem; }
+    .promo-code__label { font-size: 0.85rem; color: var(--color-text-muted); }
+    .promo-code__value { font-family: var(--font-heading); font-weight: 700; color: var(--color-accent); letter-spacing: 0.02em; }
+    .promo-card__valid { font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 1.5rem; }
+    .promo-archive-empty { padding: 2rem; text-align: center; color: var(--color-text-light); border: 1px dashed var(--color-border); border-radius: var(--radius-lg); font-size: 0.92rem; }
+    .promo-section-heading { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+      <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
+        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+      </svg>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="obo-mne.html">Обо мне</a></li>
+      <li><a href="uslugi.html">Услуги и цены</a></li>
+      <li><a href="priem.html">Как проходит приём</a></li>
+      <li><a href="akcii.html" class="active">Акции</a></li>
+      <li><a href="o-zrenii.html">О зрении</a></li>
+      <li><a href="kontakty.html">Контакты</a></li>
+    </ul>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
+    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="section section--white" style="padding-top:5rem">
+  <div class="container">
+    <p class="section-label">Акции</p>
+    <h1>Акции и спецпредложения</h1>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;max-width:640px">Актуальные скидки на очки, линзы и контактные линзы в оптике Ginter.</p>
+
+    <div class="promo-section-heading">
+      <h2 class="section-title" style="margin:0">Действуют сейчас</h2>
+    </div>
+
+    <div class="promo-card">
+      <span class="promo-card__badge promo-card__badge--active">⚡️ Активна</span>
+      <h3>Скидка -20% на линзы при покупке оправы</h3>
+      <p class="promo-card__lead">Если вы давно планировали новые очки — сейчас самый удачный момент.</p>
+
+      <p style="font-size:0.85rem;font-weight:600;color:var(--color-text);margin-bottom:0.6rem">В акции участвуют все виды линз:</p>
+      <div class="promo-tags">
+        <span class="tag">🟡 Однофокальные</span>
+        <span class="tag">🟡 Прогрессивные (мультифокальные)</span>
+        <span class="tag">🟡 Фотохромные (хамелеоны)</span>
+        <span class="tag">🟡 Stellest — контроль миопии у детей</span>
+        <span class="tag">🟡 И все остальные</span>
+      </div>
+
+      <div class="promo-code">
+        <span class="promo-code__label">🎁 Промокод:</span>
+        <span class="promo-code__value">Anna20</span>
+        <span class="promo-code__label">— и салфетка для очков в подарок</span>
+      </div>
+
+      <p class="promo-card__valid">Акция действует до 31 июля 2026</p>
+
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Записаться на приём</a>
+        <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Спросить в Telegram</a>
+      </div>
+    </div>
+
+    <div class="promo-section-heading" style="margin-top:3rem">
+      <h2 class="section-title" style="margin:0">Архив акций</h2>
+    </div>
+    <div class="promo-archive-empty">Завершённые акции появятся здесь</div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-section__inner">
+    <h2>Не хотите пропустить новую акцию?</h2>
+    <p>Следите за новостями в Instagram и Telegram-канале оптики.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
+      <a href="https://instagram.com/optika_ginter" class="btn" target="_blank">Instagram оптики</a>
+      <a href="https://t.me/optometrist_anna_ns" class="btn btn--outline" target="_blank">Telegram-канал</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Анна Новосёлова</div>
+        <p class="footer__tagline">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
+      </div>
+      <div>
+        <p class="footer__heading">Навигация</p>
+        <ul class="footer__links">
+          <li><a href="obo-mne.html">Обо мне</a></li>
+          <li><a href="uslugi.html">Услуги и цены</a></li>
+          <li><a href="priem.html">Как проходит приём</a></li>
+          <li><a href="akcii.html">Акции</a></li>
+          <li><a href="o-zrenii.html">О зрении</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
+          <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
+          <li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a>
+    </div>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>
