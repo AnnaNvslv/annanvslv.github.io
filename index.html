@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Анна Новосёлова — оптометрист в Нови Саде</title>
-  <meta name="description" content="Проверка зрения, подбор очков и контактных линз в Нови Саде. Оптометрист Анна Новосёлова. Приём на русском языке, оптика Ginter.">
-  <meta name="keywords" content="оптометрист Нови Сад, проверка зрения Нови Сад, подбор очков Сербия, оптика Нови Сад">
+  <title>Анна Новосёлова — медицинский оптик и оптометрист в Нови Саде</title>
+  <meta name="description" content="Помогу разобраться со зрением и очками: проверка зрения, подбор очков и контактных линз для взрослых, помощь с очками для детей по рецепту офтальмолога. Оптика Ginter, Нови Сад.">
+  <meta name="keywords" content="медицинский оптик Нови Сад, оптометрист Нови Сад, проверка зрения Нови Сад, подбор очков Сербия, оптика Нови Сад">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -13,17 +13,31 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <style>
+    .gde-photo { width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.25rem; display: block; }
+    .reason-card__problem { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: 1rem; margin: 0 0 0.6rem; color: var(--color-text); }
+    .reason-card__problem::before { content: ''; width: 14px; height: 14px; border-radius: 50%; background: #F0997B; flex-shrink: 0; }
+    .reason-card__solution { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.65; margin: 0; }
+    .reason-card__solution::before { content: '\2713'; color: var(--color-teal); flex-shrink: 0; font-weight: 700; }
+    .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .audience-card { background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; }
+    .audience-card h4 { color: var(--color-accent); font-size: 1rem; margin-bottom: 0.5rem; }
+    .audience-card p { font-size: 0.92rem; line-height: 1.7; color: var(--color-text-muted); margin: 0; }
+    .cta-rounded { border-radius: var(--radius-lg); padding: 3rem 2rem; }
+    @media (max-width: 600px) { .audience-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — медицинский оптик и оптометрист">
       <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
-        <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
-        <line x1="30" y1="29" x2="190" y2="29" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
-        <text class="logo-sub" x="111" y="42" text-anchor="middle">OPTOMETRIST</text>
+        <text class="logo-name" x="110" y="19" text-anchor="middle">ANNA NOVOSELOVA</text>
+        <line x1="30" y1="25" x2="190" y2="25" stroke="#1F5E9C" stroke-width="0.6" stroke-opacity="0.35"/>
+        <text class="logo-sub" x="111" y="34" text-anchor="middle" style="font-size:7px;letter-spacing:0.11em">MEDICAL OPTICIAN</text>
+        <text class="logo-sub" x="111" y="43" text-anchor="middle" style="font-size:7px;letter-spacing:0.11em">OPTOMETRIST</text>
       </svg>
     </a>
     <ul class="nav__links">
@@ -33,7 +47,7 @@
       <li><a href="priem.html">Как проходит приём</a></li>
       <li><a href="o-zrenii.html">О зрении</a></li>
     </ul>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Записаться на приём</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
     <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -43,242 +57,93 @@
   <div class="container">
     <div class="hero__inner">
       <div class="hero__content">
-        <p class="section-label">Оптометрист в Нови-Саде</p>
-        <h1>Проверка зрения и подбор очков в Нови-Саде</h1>
-        <p class="hero__sub">Для взрослых и детей. От проверки зрения до получения готовых очков.</p>
+        <p class="section-label">Нови-Сад &middot; Оптика Ginter</p>
+        <h1>Помогу разобраться со зрением и очками</h1>
+        <p class="hero__sub">Медицинский оптик и оптометрист. От проверки зрения до готовых очков — объясню простыми словами и подберу решение, с которым будет комфортно каждый день.</p>
         <ul class="hero__checklist">
-          <li>Приём на русском языке</li>
           <li>Подбор очков и контактных линз</li>
-          <li>Современное оборудование</li>
-          <li>Сопровождение после приёма</li>
+          <li>Помогу разобраться с очками и взрослым, и детям</li>
+          <li>Перевожу с оптического на русский</li>
+          <li>Веду приём на русском и сербском языке</li>
         </ul>
         <div class="hero__actions">
-          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Записаться на приём</a>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
           <span class="hero__hint">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Удобное время онлайн
           </span>
         </div>
-        <p style="font-size:0.85rem;color:var(--color-text-light);margin-top:0.25rem">Анна Новосёлова · Оптика Ginter</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ПОЧЕМУ ПАЦИЕНТЫ -->
+<!-- ГДЕ Я ПРИНИМАЮ -->
 <section class="section section--gray">
   <div class="container">
-    <p class="section-label">Почему выбирают</p>
-    <h2 class="section-title">Почему пациенты обращаются ко мне</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
-        <h4>Подробный приём около часа</h4>
-        <p>Не тороплюсь. Тщательно проверяю зрение и отвечаю на все вопросы.</p>
-      </div>
-      <div class="why-card">
-        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        <h4>Подбираю коррекцию под образ жизни</h4>
-        <p>Учитываю работу, нагрузки, привычки и комфорт в каждом случае.</p>
-      </div>
-      <div class="why-card">
-        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        <h4>Объясняю результаты простым языком</h4>
-        <p>Вы понимаете, что происходит с вашим зрением и почему я рекомендую именно это.</p>
-      </div>
-      <div class="why-card">
-        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        <h4>Сопровождаю до получения очков</h4>
-        <p>Помогаю на всех этапах: от проверки зрения до адаптации к новым очкам или линзам.</p>
-      </div>
-    </div>
+    <p class="section-label">Где я принимаю</p>
+    <h2 class="section-title">Оптика Ginter, в центре Нови-Сада</h2>
+    <img src="images/optika-front.jpg" alt="Оптика Ginter — зал и кабинет проверки зрения" class="gde-photo">
+    <p style="max-width:640px;color:var(--color-text-muted);line-height:1.7">Работаю в Оптике Ginter, Trg Republike 25 — семейной оптике, где ценят профессионализм и тёплое отношение к каждому клиенту.</p>
   </div>
 </section>
 
-<!-- КОМУ ПОДОЙДЁТ -->
+<!-- ЧЕМ МОГУ ПОМОЧЬ -->
 <section class="section section--white">
   <div class="container">
-    <p class="section-label">Чем могу помочь</p>
+    <p class="section-label">С чем обращаются</p>
     <h2 class="section-title">Чем могу помочь</h2>
     <div class="reasons__grid">
       <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/blurred_vision.png" alt="" aria-hidden="true">
-          <h4>Стало хуже видно</h4>
-        </div>
-        <p>Подберу новую коррекцию — отдельно для дали, работы за компьютером или чтения, в зависимости от вашей ситуации.</p>
+        <p class="reason-card__problem">Стало хуже видно</p>
+        <p class="reason-card__solution">Подберу новую коррекцию под ваши потребности.</p>
       </div>
       <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/glasses_fitting.png" alt="" aria-hidden="true">
-          <h4>Не привыкаю к новым очкам</h4>
-        </div>
-        <p>Разберу причину: ошибка в подборе, неправильно подобраны линзы или оправа — и предложу решение.</p>
+        <p class="reason-card__problem">Не привыкаю к очкам</p>
+        <p class="reason-card__solution">Разберу причину и предложу решение.</p>
       </div>
       <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/computer.png" alt="" aria-hidden="true">
-          <h4>Глаза устают за компьютером</h4>
-        </div>
-        <p>Подберу коррекцию под вашу нагрузку: прогрессивные, офисные или компьютерные линзы — то, что реально поможет.</p>
+        <p class="reason-card__problem">Сложный случай</p>
+        <p class="reason-card__solution">Большие диоптрии, астигматизм, разница между глазами — разберёмся вместе.</p>
       </div>
       <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/lens_care.png" alt="" aria-hidden="true">
-          <h4>Хочу перейти на контактные линзы</h4>
-        </div>
-        <p>Подберу линзы с примеркой, включая случаи астигматизма. Объясню правила ухода и ношения.</p>
-      </div>
-      <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/sunglasses.png" alt="" aria-hidden="true">
-          <h4>Нужны солнцезащитные очки</h4>
-        </div>
-        <p>Сделаю диоптрийные солнцезащитные, фотохромные или поляризационные — под ваши параметры зрения.</p>
-      </div>
-      <div class="reason-card">
-        <div class="reason-card__header">
-          <img src="images/trial_frame.png" alt="" aria-hidden="true">
-          <h4>Сложный случай</h4>
-        </div>
-        <p>Большие диоптрии, разница между глазами, астигматизм, дети — разберёмся вместе, шаг за шагом.</p>
+        <p class="reason-card__problem">Нужны очки, но не знаете, с чего начать</p>
+        <p class="reason-card__solution">Всё объясню и помогу с выбором — и взрослым, и детям.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ЦЕНЫ — АНОНС -->
+<!-- ВЗРОСЛЫМ И ДЕТЯМ -->
 <section class="section section--gray">
   <div class="container">
-    <p class="section-label">Стоимость</p>
-    <h2 class="section-title">Цены на приём</h2>
-    <div class="prices__list">
-      <div class="price-item">
-        <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.4rem">
-            <img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
-            <h4 style="margin:0">Первичный приём</h4>
-          </div>
-          <p>Полное обследование, подбор очков или линз, рекомендации, помощь с заказом.</p>
-          <span class="price-item__time">⏱ 60 минут</span>
-        </div>
-        <div class="price-item__cost">3 000 <span>дин</span></div>
+    <p class="section-label">Важно</p>
+    <h2 class="section-title">Взрослым и детям</h2>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h4>Взрослым</h4>
+        <p>Полная проверка зрения, подбор очков и контактных линз, рекомендации и сопровождение до результата.</p>
       </div>
-      <div class="price-item">
-        <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.4rem">
-            <img src="images/povtornij_projom.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0">
-            <h4 style="margin:0">Повторный приём</h4>
-          </div>
-          <p>Контроль зрения, коррекция подбора. В течение 6 месяцев после первичного.</p>
-          <span class="price-item__time">⏱ 60 минут</span>
-        </div>
-        <div class="price-item__cost">2 000 <span>дин</span></div>
+      <div class="audience-card">
+        <h4>Детям</h4>
+        <p>Если у ребёнка плохое зрение — буду рада помочь подобрать правильные и удобные очки. Саму проверку зрения должен провести детский врач-офтальмолог, а я подключаюсь после — с выбором оправы, линз и оформлением заказа.</p>
       </div>
     </div>
-    <a href="uslugi.html" class="btn btn--outline" style="margin-top:1.25rem">Все услуги и цены</a>
-    <p class="prices__note">Оплата только наличными · Запись обязательна</p>
-  </div>
-</section>
-
-<!-- КАК ПРОХОДИТ -->
-<section class="section section--white">
-  <div class="container">
-    <p class="section-label">Процесс</p>
-    <h2 class="section-title">Как проходит приём</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step__connector">
-          <div class="step__num">1</div>
-          <div class="step__arrow"></div>
-        </div>
-        <div class="step__body">
-          <h4>Беседа и проверка зрительных жалоб</h4>
-          <p>Обсуждаем ваши симптомы и историю зрения.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__connector">
-          <div class="step__num">2</div>
-          <div class="step__arrow"></div>
-        </div>
-        <div class="step__body">
-          <h4>Диагностика зрения</h4>
-          <p>Проводим комплексную проверку на современном оборудовании.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__connector">
-          <div class="step__num">3</div>
-          <div class="step__arrow"></div>
-        </div>
-        <div class="step__body">
-          <h4>Подбор коррекции</h4>
-          <p>Подбираем оптимальные очки или линзы и объясняем все рекомендации.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__connector">
-          <div class="step__num">4</div>
-          <div class="step__arrow"></div>
-        </div>
-        <div class="step__body">
-          <h4>Рекомендации и ответы на вопросы</h4>
-          <p>Вы получаете план действий и все необходимые рекомендации.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__connector">
-          <div class="step__num">5</div>
-          <div class="step__arrow"></div>
-        </div>
-        <div class="step__body">
-          <h4>Сопровождение</h4>
-          <p>Помогаю с адаптацией и остаюсь на связи при необходимости.</p>
-        </div>
-      </div>
-    </div>
-    <a href="priem.html" class="btn btn--outline" style="margin-top:1.5rem">Подробнее о приёме</a>
-  </div>
-</section>
-
-<!-- О ЗРЕНИИ — АНОНС -->
-<section class="section section--gray">
-  <div class="container">
-    <p class="section-label">О зрении</p>
-    <h2 class="section-title">Полезно знать</h2>
-    <div class="articles__grid">
-      <a href="articles/suhost-glaz.html" class="article-card">
-        <img src="images/dry_eye.png" alt="" aria-hidden="true" style="width:40px;height:40px;object-fit:contain;margin-bottom:0.75rem">
-        <p class="article-card__tag">Здоровье</p>
-        <h3>Капли для глаз: когда нужны и как выбрать</h3>
-        <p>Сухость, покраснение, усталость — разбираем, что реально помогает.</p>
-      </a>
-      <a href="articles/priem-detail.html" class="article-card">
-        <p class="article-card__tag">Приём</p>
-        <h3>Почему приём длится час и что за это время происходит</h3>
-        <p>Подробно о каждом этапе.</p>
-      </a>
-      <a href="articles/acuvue.html" class="article-card">
-        <p class="article-card__tag">Линзы</p>
-        <h3>Acuvue в Сербии: почему дороже и где взять</h3>
-        <p>О рынке контактных линз честно.</p>
-      </a>
-    </div>
-    <a href="o-zrenii.html" class="btn btn--outline" style="margin-top:1.5rem">Все статьи</a>
   </div>
 </section>
 
 <!-- ЗАПИСЬ CTA -->
-<section class="section cta-section">
-  <div class="container cta-section__inner">
-    <h2>Записаться на приём</h2>
-    <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
-    <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
-      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Записаться онлайн</a>
-      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
+<section class="section section--white">
+  <div class="container">
+    <div class="cta-section cta-rounded">
+      <div class="cta-section__inner">
+        <h2>Записаться на приём</h2>
+        <p>Пройдите в форму онлайн-записи, выберите удобное время и вид приёма, заполните анкету — и Telegram-бот пришлёт подтверждение со всей информацией о приёме.</p>
+        <div style="margin-top:1.5rem">
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
+        </div>
+      </div>
     </div>
-    <p style="margin-top:1rem;font-size:0.85rem;color:rgba(255,255,255,0.6)">Оптика Ginter · Trg Republike 25, Novi Sad</p>
   </div>
 </section>
 
@@ -288,7 +153,7 @@
     <div class="footer__grid">
       <div>
         <div class="footer__logo">Анна Новосёлова</div>
-        <p class="footer__tagline">Оптометрист в Нови Саде.<br>Приём на русском языке.</p>
+        <p class="footer__tagline">Медицинский оптик и оптометрист в Нови Саде.<br>Приём на русском языке.</p>
       </div>
       <div>
         <p class="footer__heading">Навигация</p>
