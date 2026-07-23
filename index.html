@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
   <style>
-    .gde-photo { width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.25rem; display: block; }
+    .gde-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
+    .gde-photos img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-lg); display: block; }
+    @media (max-width: 600px) { .gde-photos { grid-template-columns: 1fr; } .gde-photos img { height: 220px; } }
     .reason-card__problem { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: 1rem; margin: 0 0 0.6rem; color: var(--color-text); }
     .reason-card__problem::before { content: ''; width: 14px; height: 14px; border-radius: 50%; background: #F0997B; flex-shrink: 0; }
     .reason-card__solution { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.65; margin: 0; }
@@ -83,7 +85,10 @@
   <div class="container">
     <p class="section-label">Где я принимаю</p>
     <h2 class="section-title">Оптика Ginter, в центре Нови-Сада</h2>
-    <img src="images/optika-front.jpg" alt="Оптика Ginter — зал и кабинет проверки зрения" class="gde-photo">
+    <div class="gde-photos">
+      <img src="images/optika-front-1.jpg" alt="Оптика Ginter — зал">
+      <img src="images/optika-front-2.jpg" alt="Оптика Ginter — кабинет проверки зрения">
+    </div>
     <p style="max-width:640px;color:var(--color-text-muted);line-height:1.7">Работаю в Оптике Ginter, Trg Republike 25 — семейной оптике, где ценят профессионализм и тёплое отношение к каждому клиенту.</p>
   </div>
 </section>
