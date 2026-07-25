@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Услуги и цены — Анна Новосёлова</title>
-  <meta name="description" content="Стоимость приёма оптометриста в Нови Саде. Первичный и повторный приём, подбор очков и контактных линз, контрольный визит. Оптика Ginter.">
+  <title data-i18n="services.meta_title">Услуги и цены — Анна Новосёлова</title>
+  <meta name="description" data-i18n-content="services.meta_description" content="Стоимость приёма оптометриста в Нови Саде. Первичный и повторный приём, подбор очков и контактных линз, контрольный визит. Оптика Ginter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -48,7 +48,7 @@
 <body>
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+    <a href="index.html" class="nav__logo-svg" data-i18n-aria-label="nav.logo_aria_std" aria-label="Анна Новосёлова — оптометрист">
       <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
         <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
@@ -57,213 +57,218 @@
       </svg>
     </a>
     <ul class="nav__links">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="uslugi.html" class="active">Услуги и цены</a></li>
-      <li><a href="priem.html">Как проходит приём</a></li>
-      <li><a href="akcii.html">Акции</a></li>
-      <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="kontakty.html">Контакты</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+      <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+      <li><a href="uslugi.html" class="active" data-i18n="nav.services">Услуги и цены</a></li>
+      <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+      <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+      <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+      <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
     </ul>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
-    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
+    <div class="lang-switch" role="group" aria-label="Language / Jezik">
+      <button type="button" class="lang-switch__btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-switch__btn" data-lang="sr">SR</button>
+    </div>
+    <button class="nav__burger" data-i18n-aria-label="nav.burger_aria" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="section section--white" style="padding-top:5rem">
   <div class="container">
-    <p class="section-label">Услуги и цены</p>
+    <p class="section-label" data-i18n="nav.services">Услуги и цены</p>
     <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
       <img src="images/stoimost.png" alt="" aria-hidden="true" style="width:44px;height:44px;object-fit:contain;flex-shrink:0">
-      <h1 style="margin:0">Стоимость приёма</h1>
+      <h1 style="margin:0" data-i18n="services.h1">Стоимость приёма</h1>
     </div>
-    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8">Я принимаю в Оптике Ginter, в центре Нови Сада. Запись обязательна.</p>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8" data-i18n="services.lead">Я принимаю в Оптике Ginter, в центре Нови Сада. Запись обязательна.</p>
 
     <div class="prices__list">
 
       <div class="price-item">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Проверка зрения, подбор очков и контактных линз</h4></div>
-          <p>Часовая консультация с обследованием и подбором очков и контактных линз.</p>
-          <span class="price-item__time">60 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/obsledovanije.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0" data-i18n="services.item1_title">Проверка зрения, подбор очков и контактных линз</h4></div>
+          <p data-i18n="services.item1_desc">Часовая консультация с обследованием и подбором очков и контактных линз.</p>
+          <span class="price-item__time" data-i18n="services.item1_time">60 минут</span>
           <details class="svc-acc">
-            <summary>Что входит в приём</summary>
+            <summary data-i18n="services.acc_includes">Что входит в приём</summary>
             <ul>
-              <li>Подробный сбор анамнеза</li>
-              <li>Обследование на авторефкератометре (объективная рефракция)</li>
-              <li>Проверка остроты зрения</li>
-              <li>Субъективная проверка рефракции пробным набором линз</li>
-              <li>Подбор очков с учётом особенностей зрительной работы</li>
-              <li>Рекомендации и разъяснения по вашей ситуации</li>
-              <li>Сопровождение в оптике при заказе очков</li>
+              <li data-i18n="services.item1_li1">Подробный сбор анамнеза</li>
+              <li data-i18n="services.item1_li2">Обследование на авторефкератометре (объективная рефракция)</li>
+              <li data-i18n="services.item1_li3">Проверка остроты зрения</li>
+              <li data-i18n="services.item1_li4">Субъективная проверка рефракции пробным набором линз</li>
+              <li data-i18n="services.item1_li5">Подбор очков с учётом особенностей зрительной работы</li>
+              <li data-i18n="services.item1_li6">Рекомендации и разъяснения по вашей ситуации</li>
+              <li data-i18n="services.item1_li7">Сопровождение в оптике при заказе очков</li>
             </ul>
-            <div class="svc-note">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
-            <div class="svc-link"><a href="priem.html">О том, как проходит приём →</a></div>
+            <div class="svc-note" data-i18n="services.note_ophthalmologist">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
+            <div class="svc-link"><a href="priem.html" data-i18n="services.link_appointment">О том, как проходит приём →</a></div>
           </details>
         </div>
-        <div class="price-item__cost">3 000 <span>дин</span></div>
+        <div class="price-item__cost">3 000 <span data-i18n="services.currency_din">дин</span></div>
       </div>
 
       <div class="price-item">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/contact_lenses.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Проверка зрения, подбор контактных линз</h4></div>
-          <p>Практическое обучение снятию/надеванию контактных линз.</p>
-          <span class="price-item__time">90–120 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/contact_lenses.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0" data-i18n="services.item2_title">Проверка зрения, подбор контактных линз</h4></div>
+          <p data-i18n="services.item2_desc">Практическое обучение снятию/надеванию контактных линз.</p>
+          <span class="price-item__time" data-i18n="services.item2_time">90–120 минут</span>
           <details class="svc-acc">
-            <summary>Что входит в приём</summary>
+            <summary data-i18n="services.acc_includes">Что входит в приём</summary>
             <ul>
-              <li>Подробный сбор анамнеза</li>
-              <li>Обследование на авторефкератометре</li>
-              <li>Проверка остроты зрения</li>
-              <li>Субъективная проверка рефракции, подбор параметров линз</li>
-              <li>Теоретическая часть: правила безопасного ношения контактных линз</li>
-              <li>Специалист покажет на себе, как надевать и снимать линзу, затем наденет линзу вам</li>
-              <li>Вы будете тренироваться сами под контролем специалиста, пока не начнёт получаться уверенно</li>
+              <li data-i18n="services.item1_li1">Подробный сбор анамнеза</li>
+              <li data-i18n="services.item2_li2">Обследование на авторефкератометре</li>
+              <li data-i18n="services.item1_li3">Проверка остроты зрения</li>
+              <li data-i18n="services.item2_li4">Субъективная проверка рефракции, подбор параметров линз</li>
+              <li data-i18n="services.item2_li5">Теоретическая часть: правила безопасного ношения контактных линз</li>
+              <li data-i18n="services.item2_li6">Специалист покажет на себе, как надевать и снимать линзу, затем наденет линзу вам</li>
+              <li data-i18n="services.item2_li7">Вы будете тренироваться сами под контролем специалиста, пока не начнёт получаться уверенно</li>
             </ul>
-            <div class="svc-note">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
-            <div class="svc-link"><a href="priem.html">О том, как проходит приём →</a></div>
+            <div class="svc-note" data-i18n="services.note_ophthalmologist">На приёме оптометриста не проводится циклоплегия (расширение зрачка), осмотр глазного дна и измерение внутриглазного давления. Это делает офтальмолог — врач, который также диагностирует и лечит глазные заболевания (катаракту, глаукому, патологии сетчатки и т.п.).</div>
+            <div class="svc-link"><a href="priem.html" data-i18n="services.link_appointment">О том, как проходит приём →</a></div>
           </details>
         </div>
-        <div class="price-item__cost">3 500 <span>дин</span></div>
+        <div class="price-item__cost">3 500 <span data-i18n="services.currency_din">дин</span></div>
       </div>
 
       <div class="price-item price-item--free">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">✅</span><h4 style="margin:0">Контрольный визит</h4></div>
-          <p>Контрольный визит после получения очков.</p>
-          <span class="price-item__time">15 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">✅</span><h4 style="margin:0" data-i18n="services.item3_title">Контрольный визит</h4></div>
+          <p data-i18n="services.item3_desc">Контрольный визит после получения очков.</p>
+          <span class="price-item__time" data-i18n="services.time_15">15 минут</span>
         </div>
-        <div class="price-item__cost price-item__cost--free">Бесплатно</div>
+        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
       </div>
 
       <div class="price-item price-item--free">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/pomosch_v_oformlenii.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Помощь при оформлении заказа</h4></div>
-          <p>Если есть рецепт на очки, но нужна помощь в оптике, в том числе с детскими очками.</p>
-          <span class="price-item__time">15 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/pomosch_v_oformlenii.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0" data-i18n="services.item4_title">Помощь при оформлении заказа</h4></div>
+          <p data-i18n="services.item4_desc">Если есть рецепт на очки, но нужна помощь в оптике, в том числе с детскими очками.</p>
+          <span class="price-item__time" data-i18n="services.time_15">15 минут</span>
           <details class="svc-acc">
-            <summary>Чем могу помочь</summary>
+            <summary data-i18n="services.item4_acc_summary">Чем могу помочь</summary>
             <ul>
-              <li>Помощь в подборе оправы</li>
-              <li>Рекомендации по посадке, качеству и техническим ограничениям в соответствии с вашим рецептом</li>
-              <li>Помощь с выбором очковых линз — объясню разницу, подберу варианты под ваш бюджет</li>
-              <li>Ремонт очков</li>
-              <li>Проверка соответствия изготовленных очков вашему рецепту</li>
+              <li data-i18n="services.item4_li1">Помощь в подборе оправы</li>
+              <li data-i18n="services.item4_li2">Рекомендации по посадке, качеству и техническим ограничениям в соответствии с вашим рецептом</li>
+              <li data-i18n="services.item4_li3">Помощь с выбором очковых линз — объясню разницу, подберу варианты под ваш бюджет</li>
+              <li data-i18n="services.item4_li4">Ремонт очков</li>
+              <li data-i18n="services.item4_li5">Проверка соответствия изготовленных очков вашему рецепту</li>
             </ul>
           </details>
         </div>
-        <div class="price-item__cost price-item__cost--free">Бесплатно</div>
+        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
       </div>
 
       <div class="price-item">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/povtornij_projom.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0">Повторный приём</h4></div>
-          <p>В течение 6 месяцев после первичного.</p>
-          <span class="price-item__time">60 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><img src="images/povtornij_projom.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;flex-shrink:0"><h4 style="margin:0" data-i18n="services.item5_title">Повторный приём</h4></div>
+          <p data-i18n="services.item5_desc">В течение 6 месяцев после первичного.</p>
+          <span class="price-item__time" data-i18n="services.item1_time">60 минут</span>
         </div>
-        <div class="price-item__cost">2 000 <span>дин</span></div>
+        <div class="price-item__cost">2 000 <span data-i18n="services.currency_din">дин</span></div>
       </div>
 
       <div class="price-item price-item--free">
         <div class="price-item__info">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">🎁</span><h4 style="margin:0">Экспресс-диагностика зрения</h4></div>
-          <p>Экспресс-чекап: нужны ли новые очки (не полноценная проверка зрения).</p>
-          <span class="price-item__time">15 минут</span>
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem"><span class="svc-icon-emoji" aria-hidden="true">🎁</span><h4 style="margin:0" data-i18n="services.item6_title">Экспресс-диагностика зрения</h4></div>
+          <p data-i18n="services.item6_desc">Экспресс-чекап: нужны ли новые очки (не полноценная проверка зрения).</p>
+          <span class="price-item__time" data-i18n="services.time_15">15 минут</span>
           <details class="svc-acc">
-            <summary>Что входит</summary>
+            <summary data-i18n="services.item6_acc1_summary">Что входит</summary>
             <ul>
-              <li>Авторефрактометрия (проверка на аппарате)</li>
-              <li>Проверка остроты зрения без коррекции</li>
-              <li>Проверка остроты зрения в ваших очках</li>
+              <li data-i18n="services.item6_li1">Авторефрактометрия (проверка на аппарате)</li>
+              <li data-i18n="services.item6_li2">Проверка остроты зрения без коррекции</li>
+              <li data-i18n="services.item6_li3">Проверка остроты зрения в ваших очках</li>
             </ul>
-            <div class="svc-result">В результате вы получите: понимание, пора ли заказывать первые очки или менять старые, направление к офтальмологу при необходимости, общие рекомендации по состоянию зрения.</div>
+            <div class="svc-result" data-i18n="services.item6_result">В результате вы получите: понимание, пора ли заказывать первые очки или менять старые, направление к офтальмологу при необходимости, общие рекомендации по состоянию зрения.</div>
           </details>
           <details class="svc-acc">
-            <summary>Подходит ли мне экспресс-проверка?</summary>
+            <summary data-i18n="services.item6_acc2_summary">Подходит ли мне экспресс-проверка?</summary>
             <div class="svc-group green">
-              <span class="svc-group__title">Подойдёт, если:</span>
+              <span class="svc-group__title" data-i18n="services.item6_g1_title">Подойдёт, если:</span>
               <ul>
-                <li>Зрение начало портиться, но не уверены — нужны ли очки</li>
-                <li>Очки стали слабоваты</li>
-                <li>Хотите проверить, что очки подобраны верно</li>
+                <li data-i18n="services.item6_g1_li1">Зрение начало портиться, но не уверены — нужны ли очки</li>
+                <li data-i18n="services.item6_g1_li2">Очки стали слабоваты</li>
+                <li data-i18n="services.item6_g1_li3">Хотите проверить, что очки подобраны верно</li>
               </ul>
             </div>
             <div class="svc-group blue">
-              <span class="svc-group__title">Нужен полноценный приём, если:</span>
+              <span class="svc-group__title" data-i18n="services.item6_g2_title">Нужен полноценный приём, если:</span>
               <ul>
-                <li>Нужен подбор очков/контактных линз, в т.ч. прогрессивных/офисных</li>
-                <li>Давно не проверяли зрение, были сложности с подбором</li>
-                <li>Есть астигматизм, амблиопия, анизометропия и т.п.</li>
-                <li>Пациент младше 20 лет</li>
+                <li data-i18n="services.item6_g2_li1">Нужен подбор очков/контактных линз, в т.ч. прогрессивных/офисных</li>
+                <li data-i18n="services.item6_g2_li2">Давно не проверяли зрение, были сложности с подбором</li>
+                <li data-i18n="services.item6_g2_li3">Есть астигматизм, амблиопия, анизометропия и т.п.</li>
+                <li data-i18n="services.item6_g2_li4">Пациент младше 20 лет</li>
               </ul>
             </div>
           </details>
         </div>
-        <div class="price-item__cost price-item__cost--free">Бесплатно</div>
+        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
       </div>
 
     </div>
 
     <div class="payment-block">
-      <h3>Оплата</h3>
+      <h3 data-i18n="services.payment_title">Оплата</h3>
       <div class="payment-row">
         <div class="payment-row__icon" aria-hidden="true">💵</div>
         <div class="payment-row__body">
-          <h4>Консультация (приём)</h4>
-          <p>Оплата только наличными.</p>
+          <h4 data-i18n="services.pay1_title">Консультация (приём)</h4>
+          <p data-i18n="services.pay1_text">Оплата только наличными.</p>
         </div>
       </div>
       <div class="payment-row">
         <div class="payment-row__icon" aria-hidden="true">💳</div>
         <div class="payment-row__body">
-          <h4>Готовые очки и контактные линзы</h4>
-          <p>Можно оплатить картой или наличными — при получении заказа.</p>
+          <h4 data-i18n="services.pay2_title">Готовые очки и контактные линзы</h4>
+          <p data-i18n="services.pay2_text">Можно оплатить картой или наличными — при получении заказа.</p>
         </div>
       </div>
     </div>
 
     <div style="margin-top:1.5rem">
-      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
     </div>
 
-    <p class="prices__note" style="margin-top:1rem">Запись обязательна</p>
+    <p class="prices__note" style="margin-top:1rem" data-i18n="services.note_booking_required">Запись обязательна</p>
   </div>
 </section>
 
 <section class="section section--gray">
   <div class="container">
-    <p class="section-label">Что входит в приём</p>
+    <p class="section-label" data-i18n="services.section2_label">Что входит в приём</p>
     <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem">
       <img src="images/kaka_prohodit_prijom.png" alt="" aria-hidden="true" style="width:44px;height:44px;object-fit:contain;flex-shrink:0">
-      <h2 class="section-title" style="margin:0">Из чего состоит приём</h2>
+      <h2 class="section-title" style="margin:0" data-i18n="services.section2_title">Из чего состоит приём</h2>
     </div>
     <div class="steps">
-      <div class="step"><div class="step__num">01</div><div class="step__body"><h4>Сбор анамнеза</h4><p>Подробно разбираем историю вашего зрения, жалобы и цели — это влияет на весь подбор.</p></div></div>
-      <div class="step"><div class="step__num">02</div><div class="step__body"><h4>Объективное обследование</h4><p>Авторефкератометрия — прибор считывает объективную рефракцию. Отправная точка подбора.</p></div></div>
-      <div class="step"><div class="step__num">03</div><div class="step__body"><h4>Субъективный подбор</h4><p>С пробными линзами определяем оптимальную коррекцию под ваш образ жизни и нагрузки.</p></div></div>
-      <div class="step"><div class="step__num">04</div><div class="step__body"><h4>Карточка и помощь в оптике</h4><p>Распечатываю карточку с результатами, объясняю простыми словами, помогаю оформить заказ.</p></div></div>
+      <div class="step"><div class="step__num">01</div><div class="step__body"><h4 data-i18n="services.step1_title">Сбор анамнеза</h4><p data-i18n="services.step1_text">Подробно разбираем историю вашего зрения, жалобы и цели — это влияет на весь подбор.</p></div></div>
+      <div class="step"><div class="step__num">02</div><div class="step__body"><h4 data-i18n="services.step2_title">Объективное обследование</h4><p data-i18n="services.step2_text">Авторефкератометрия — прибор считывает объективную рефракцию. Отправная точка подбора.</p></div></div>
+      <div class="step"><div class="step__num">03</div><div class="step__body"><h4 data-i18n="services.step3_title">Субъективный подбор</h4><p data-i18n="services.step3_text">С пробными линзами определяем оптимальную коррекцию под ваш образ жизни и нагрузки.</p></div></div>
+      <div class="step"><div class="step__num">04</div><div class="step__body"><h4 data-i18n="services.step4_title">Карточка и помощь в оптике</h4><p data-i18n="services.step4_text">Распечатываю карточку с результатами, объясняю простыми словами, помогаю оформить заказ.</p></div></div>
     </div>
-    <a href="priem.html" class="btn btn--outline" style="margin-top:1.5rem">Подробнее о приёме</a>
+    <a href="priem.html" class="btn btn--outline" style="margin-top:1.5rem" data-i18n="services.more_about_appointment">Подробнее о приёме</a>
   </div>
 </section>
 
 <section class="section cta-section">
   <div class="container"><div class="cta-section__inner">
-    <h2>Записаться на приём</h2>
-    <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
+    <h2 data-i18n="cta.book_title">Записаться на приём</h2>
+    <p data-i18n="cta.book_sub_default">Выберите удобное время онлайн — без звонков и ожидания.</p>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
   </div></div>
 </section>
 
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div><div class="footer__logo">Анна Новосёлова</div><p class="footer__tagline">Оптометрист в Нови Саде.<br>Приём на русском языке.</p></div>
-      <div><p class="footer__heading">Навигация</p><ul class="footer__links"><li><a href="obo-mne.html">Обо мне</a></li><li><a href="uslugi.html">Услуги и цены</a></li><li><a href="priem.html">Как проходит приём</a></li><li><a href="akcii.html">Акции</a></li><li><a href="o-zrenii.html">О зрении</a></li><li><a href="kontakty.html">Контакты</a></li><li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li><li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li><li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li></ul></div>
+      <div><div class="footer__logo" data-i18n="footer.logo">Анна Новосёлова</div><p class="footer__tagline" data-i18n="footer.tagline_services">Оптометрист в Нови Саде.<br>Приём на русском языке.</p></div>
+      <div><p class="footer__heading" data-i18n="footer.heading">Навигация</p><ul class="footer__links"><li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li><li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li><li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li><li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li><li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li><li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li><li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank" data-i18n="nav.booking_cta">Online-запись</a></li><li><a href="https://t.me/optometrist_anna_ns" target="_blank" data-i18n="footer.telegram_channel">Telegram-канал</a></li><li><a href="https://instagram.com/optika_ginter" target="_blank" data-i18n="footer.instagram">Instagram</a></li></ul></div>
     </div>
     <div class="footer__bottom">Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a></div>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
