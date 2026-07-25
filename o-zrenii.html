@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О зрении — Анна Новосёлова</title>
-  <meta name="description" content="Статьи об оптометрии, очках и контактных линзах от оптометриста Анны Новосёловой.">
+  <title data-i18n="vision.meta_title">О зрении — Анна Новосёлова</title>
+  <meta name="description" data-i18n-content="vision.meta_description" content="Статьи об оптометрии, очках и контактных линзах от оптометриста Анны Новосёловой.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -30,7 +30,7 @@
 <body>
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+    <a href="index.html" class="nav__logo-svg" data-i18n-aria-label="nav.logo_aria_std" aria-label="Анна Новосёлова — оптометрист">
       <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
         <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
@@ -39,51 +39,55 @@
       </svg>
     </a>
     <ul class="nav__links">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="uslugi.html">Услуги и цены</a></li>
-      <li><a href="priem.html">Как проходит приём</a></li>
-      <li><a href="akcii.html">Акции</a></li>
-      <li><a href="o-zrenii.html" class="active">О зрении</a></li>
-      <li><a href="kontakty.html">Контакты</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+      <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+      <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+      <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+      <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+      <li><a href="o-zrenii.html" class="active" data-i18n="nav.vision">О зрении</a></li>
+      <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
     </ul>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
-    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
+    <div class="lang-switch" role="group" aria-label="Language / Jezik">
+      <button type="button" class="lang-switch__btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-switch__btn" data-lang="sr">SR</button>
+    </div>
+    <button class="nav__burger" data-i18n-aria-label="nav.burger_aria" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="section section--white" style="padding-top:5rem">
   <div class="container">
-    <p class="section-label" style="margin-bottom:0.2rem">О зрении</p>
+    <p class="section-label" style="margin-bottom:0.2rem" data-i18n="nav.vision">О зрении</p>
     <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
       <img src="images/poleznaja_informacija.png" alt="" aria-hidden="true" style="width:44px;height:44px;object-fit:contain;flex-shrink:0">
-      <h1 style="margin:0">Статьи</h1>
+      <h1 style="margin:0" data-i18n="vision.h1">Статьи</h1>
     </div>
-    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300">Полезная информация о зрении, очках и контактных линзах.</p>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300" data-i18n="vision.lead">Полезная информация о зрении, очках и контактных линзах.</p>
 
     <div class="articles-list">
       <a href="articles/fotohrom.html" class="article-row">
-        <img src="images/fotohrom.png" alt="Фотохромные линзы" class="article-row__img">
+        <img src="images/fotohrom.png" data-i18n-alt="vision.art1_alt" alt="Фотохромные линзы" class="article-row__img">
         <div class="article-row__body">
-          <p class="article-row__tag">Очковые линзы</p>
-          <div class="article-row__title">Фотохромные линзы-хамелеоны: как работают и цены</div>
-          <p class="article-row__desc">Одна пара очков для улицы и помещения. Polo Photomatik от 6 000 дин., Transitions от 18 000 дин. Специальные варианты для водителей.</p>
+          <p class="article-row__tag" data-i18n="vision.tag_lenses">Очковые линзы</p>
+          <div class="article-row__title" data-i18n="vision.art1_title">Фотохромные линзы-хамелеоны: как работают и цены</div>
+          <p class="article-row__desc" data-i18n="vision.art1_desc">Одна пара очков для улицы и помещения. Polo Photomatik от 6 000 дин., Transitions от 18 000 дин. Специальные варианты для водителей.</p>
         </div>
       </a>
       <a href="articles/acuvue.html" class="article-row">
         <img src="images/acuvue.png" alt="Acuvue Oasys" class="article-row__img">
         <div class="article-row__body">
-          <p class="article-row__tag">Контактные линзы</p>
-          <div class="article-row__title">Acuvue Oasys в Сербии: цена до 30 июня</div>
-          <p class="article-row__desc">Двухнедельные от 2 800 дин., однодневные от 3 300 дин. Без наценки, с доставкой в оптику Ginter.</p>
+          <p class="article-row__tag" data-i18n="vision.tag_lenses_contact">Контактные линзы</p>
+          <div class="article-row__title" data-i18n="vision.art2_title">Acuvue Oasys в Сербии: цена до 30 июня</div>
+          <p class="article-row__desc" data-i18n="vision.art2_desc">Двухнедельные от 2 800 дин., однодневные от 3 300 дин. Без наценки, с доставкой в оптику Ginter.</p>
         </div>
       </a>
       <a href="articles/suhost-glaz.html" class="article-row">
-        <img src="images/suhost-glaz.png" alt="Сухость глаз" class="article-row__img">
+        <img src="images/suhost-glaz.png" data-i18n-alt="vision.art3_alt" alt="Сухость глаз" class="article-row__img">
         <div class="article-row__body">
-          <p class="article-row__tag">Уход за глазами</p>
-          <div class="article-row__title">Сухость глаз: какие капли выбрать?</div>
-          <p class="article-row__desc">Жжение, покраснение, ощущение песка — как выбрать подходящие капли и когда обратиться к офтальмологу.</p>
+          <p class="article-row__tag" data-i18n="vision.tag_care">Уход за глазами</p>
+          <div class="article-row__title" data-i18n="vision.art3_title">Сухость глаз: какие капли выбрать?</div>
+          <p class="article-row__desc" data-i18n="vision.art3_desc">Жжение, покраснение, ощущение песка — как выбрать подходящие капли и когда обратиться к офтальмологу.</p>
         </div>
       </a>
     </div>
@@ -92,11 +96,11 @@
 
 <section class="section cta-section">
   <div class="container cta-section__inner">
-    <h2>Есть вопрос по зрению?</h2>
-    <p>Запишитесь на приём или напишите в Telegram — отвечу.</p>
+    <h2 data-i18n="vision.cta_title">Есть вопрос по зрению?</h2>
+    <p data-i18n="vision.cta_sub">Запишитесь на приём или напишите в Telegram — отвечу.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
-      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
-      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
+      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank" data-i18n="btn.telegram_write">Написать в Telegram</a>
     </div>
   </div>
 </section>
@@ -105,21 +109,21 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <div class="footer__logo">Анна Новосёлова</div>
-        <p class="footer__tagline">Оптометрист в Нови Саде.<br>Приём на русском языке.</p>
+        <div class="footer__logo" data-i18n="footer.logo">Анна Новосёлова</div>
+        <p class="footer__tagline" data-i18n="footer.tagline_services">Оптометрист в Нови Саде.<br>Приём на русском языке.</p>
       </div>
       <div>
-        <p class="footer__heading">Навигация</p>
+        <p class="footer__heading" data-i18n="footer.heading">Навигация</p>
         <ul class="footer__links">
-          <li><a href="obo-mne.html">Обо мне</a></li>
-          <li><a href="uslugi.html">Услуги и цены</a></li>
-          <li><a href="priem.html">Как проходит приём</a></li>
-          <li><a href="akcii.html">Акции</a></li>
-          <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
-          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
-          <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
-          <li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li>
+          <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+          <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+          <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+          <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+          <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+          <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank" data-i18n="nav.booking_cta">Online-запись</a></li>
+          <li><a href="https://t.me/optometrist_anna_ns" target="_blank" data-i18n="footer.telegram_channel">Telegram-канал</a></li>
+          <li><a href="https://instagram.com/optika_ginter" target="_blank" data-i18n="footer.instagram">Instagram</a></li>
         </ul>
       </div>
     </div>
@@ -128,6 +132,7 @@
     </div>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
