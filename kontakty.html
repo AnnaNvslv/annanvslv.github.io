@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты — Анна Новосёлова, оптика Ginter</title>
-  <meta name="description" content="Контакты оптики Ginter в Нови Саде: адрес, телефон, режим работы, Telegram и Instagram. Приём оптометриста Анны Новосёловой.">
+  <title data-i18n="contacts.meta_title">Контакты — Анна Новосёлова, оптика Ginter</title>
+  <meta name="description" data-i18n-content="contacts.meta_description" content="Контакты оптики Ginter в Нови Саде: адрес, телефон, режим работы, Telegram и Instagram. Приём оптометриста Анны Новосёловой.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -36,7 +36,7 @@
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+    <a href="index.html" class="nav__logo-svg" data-i18n-aria-label="nav.logo_aria_std" aria-label="Анна Новосёлова — оптометрист">
       <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
         <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
@@ -45,24 +45,28 @@
       </svg>
     </a>
     <ul class="nav__links">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="uslugi.html">Услуги и цены</a></li>
-      <li><a href="priem.html">Как проходит приём</a></li>
-      <li><a href="akcii.html">Акции</a></li>
-      <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="kontakty.html" class="active">Контакты</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+      <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+      <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+      <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+      <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+      <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+      <li><a href="kontakty.html" class="active" data-i18n="nav.contacts">Контакты</a></li>
     </ul>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank">Online-запись</a>
-    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn nav__cta" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
+    <div class="lang-switch" role="group" aria-label="Language / Jezik">
+      <button type="button" class="lang-switch__btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-switch__btn" data-lang="sr">SR</button>
+    </div>
+    <button class="nav__burger" data-i18n-aria-label="nav.burger_aria" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="section section--white" style="padding-top:5rem">
   <div class="container">
-    <p class="section-label">Контакты</p>
-    <h1>Как нас найти</h1>
-    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;max-width:640px">Оптика Ginter в центре Нови Сада — здесь я веду приём. Пишите, звоните или приходите.</p>
+    <p class="section-label" data-i18n="nav.contacts">Контакты</p>
+    <h1 data-i18n="contacts.h1">Как нас найти</h1>
+    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;max-width:640px" data-i18n="contacts.lead">Оптика Ginter в центре Нови Сада — здесь я веду приём. Пишите, звоните или приходите.</p>
 
     <div class="contact-grid">
       <div class="contact-list">
@@ -72,9 +76,9 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
           </div>
           <div>
-            <h4>Адрес</h4>
-            <p>Оптика Ginter<br>Trg Republike 25, Novi Sad</p>
-            <p style="margin-top:0.5rem"><a href="https://maps.app.goo.gl/XuD8LaTNy6Q2iXnn9" target="_blank">Открыть на карте →</a></p>
+            <h4 data-i18n="contacts.addr_title">Адрес</h4>
+            <p data-i18n="contacts.addr_text">Оптика Ginter<br>Trg Republike 25, Novi Sad</p>
+            <p style="margin-top:0.5rem"><a href="https://maps.app.goo.gl/XuD8LaTNy6Q2iXnn9" target="_blank" data-i18n="contacts.map_link">Открыть на карте →</a></p>
           </div>
         </div>
 
@@ -83,10 +87,10 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
           </div>
           <div>
-            <h4>Режим работы оптики</h4>
-            <p>По будням: 09:00–19:00</p>
-            <p>Суббота: 09:00–13:00</p>
-            <p>Воскресенье — выходной</p>
+            <h4 data-i18n="contacts.hours_title">Режим работы оптики</h4>
+            <p data-i18n="contacts.hours1">По будням: 09:00–19:00</p>
+            <p data-i18n="contacts.hours2">Суббота: 09:00–13:00</p>
+            <p data-i18n="contacts.hours3">Воскресенье — выходной</p>
           </div>
         </div>
 
@@ -95,7 +99,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="#1F5E9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
           <div>
-            <h4>Телефон оптики</h4>
+            <h4 data-i18n="contacts.phone_title">Телефон оптики</h4>
             <p><a href="tel:+38121382131">021 38 32 131</a></p>
           </div>
         </div>
@@ -106,7 +110,7 @@
           </div>
           <div>
             <h4>Telegram</h4>
-            <p>По всем вопросам — напрямую мне: <a href="https://t.me/AnnaNvslv" target="_blank">@AnnaNvslv</a></p>
+            <p data-i18n="contacts.telegram_text">По всем вопросам — напрямую мне: <a href="https://t.me/AnnaNvslv" target="_blank">@AnnaNvslv</a></p>
           </div>
         </div>
 
@@ -116,17 +120,17 @@
           </div>
           <div>
             <h4>Instagram</h4>
-            <p>Фото, акции и новости оптики: <a href="https://instagram.com/optika_ginter" target="_blank">@optika_ginter</a></p>
+            <p data-i18n="contacts.instagram_text">Фото, акции и новости оптики: <a href="https://instagram.com/optika_ginter" target="_blank">@optika_ginter</a></p>
           </div>
         </div>
 
       </div>
 
       <div class="map-card">
-        <iframe src="https://www.google.com/maps?q=45.2576813,19.8517835&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Оптика Ginter на карте"></iframe>
+        <iframe src="https://www.google.com/maps?q=45.2576813,19.8517835&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-i18n-title="contacts.map_title" title="Оптика Ginter на карте"></iframe>
         <div class="map-card__footer">
           <p>Trg Republike 25, Novi Sad</p>
-          <a href="https://maps.app.goo.gl/XuD8LaTNy6Q2iXnn9" target="_blank">Открыть в Google Maps →</a>
+          <a href="https://maps.app.goo.gl/XuD8LaTNy6Q2iXnn9" target="_blank" data-i18n="contacts.map_link2">Открыть в Google Maps →</a>
         </div>
       </div>
     </div>
@@ -135,11 +139,11 @@
 
 <section class="section cta-section">
   <div class="container cta-section__inner">
-    <h2>Записаться на приём</h2>
-    <p>Выберите удобное время онлайн — без звонков и ожидания.</p>
+    <h2 data-i18n="cta.book_title">Записаться на приём</h2>
+    <p data-i18n="cta.book_sub_default">Выберите удобное время онлайн — без звонков и ожидания.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
-      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank">Online-запись</a>
-      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank">Написать в Telegram</a>
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
+      <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank" data-i18n="btn.telegram_write">Написать в Telegram</a>
     </div>
   </div>
 </section>
@@ -148,21 +152,21 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <div class="footer__logo">Анна Новосёлова</div>
-        <p class="footer__tagline">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
+        <div class="footer__logo" data-i18n="footer.logo">Анна Новосёлова</div>
+        <p class="footer__tagline" data-i18n="footer.tagline_about_promo">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
       </div>
       <div>
-        <p class="footer__heading">Навигация</p>
+        <p class="footer__heading" data-i18n="footer.heading">Навигация</p>
         <ul class="footer__links">
-          <li><a href="obo-mne.html">Обо мне</a></li>
-          <li><a href="uslugi.html">Услуги и цены</a></li>
-          <li><a href="priem.html">Как проходит приём</a></li>
-          <li><a href="akcii.html">Акции</a></li>
-          <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
-          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank">Online-запись</a></li>
-          <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
-          <li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li>
+          <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+          <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+          <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+          <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+          <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+          <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
+          <li><a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" target="_blank" data-i18n="nav.booking_cta">Online-запись</a></li>
+          <li><a href="https://t.me/optometrist_anna_ns" target="_blank" data-i18n="footer.telegram_channel">Telegram-канал</a></li>
+          <li><a href="https://instagram.com/optika_ginter" target="_blank" data-i18n="footer.instagram">Instagram</a></li>
         </ul>
       </div>
     </div>
@@ -171,6 +175,7 @@
     </div>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
