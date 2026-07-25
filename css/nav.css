@@ -140,3 +140,36 @@
     margin-top: var(--space-xs);
   }
 }
+
+/* Language switcher (RU / SR) */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--color-bg-section);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.lang-switch__btn {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: calc(var(--radius-sm) - 2px);
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-switch__btn:hover { color: var(--color-accent); }
+
+.lang-switch__btn.is-active {
+  background: var(--color-bg-white);
+  color: var(--color-accent);
+  box-shadow: 0 1px 3px rgba(31,94,156,0.12);
+}
