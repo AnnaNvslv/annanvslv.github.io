@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Онлайн-запись — Анна Новосёлова</title>
-  <meta name="description" content="Запишитесь на приём к оптометристу Анне Новосёловой в Нови Саде. Оптика Ginter.">
+  <title data-i18n="booking.meta_title">Онлайн-запись — Анна Новосёлова</title>
+  <meta name="description" data-i18n-content="booking.meta_description" content="Запишитесь на приём к оптометристу Анне Новосёловой в Нови Саде. Оптика Ginter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -17,7 +17,7 @@
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo-svg" aria-label="Анна Новосёлова — оптометрист">
+    <a href="index.html" class="nav__logo-svg" data-i18n-aria-label="nav.logo_aria_std" aria-label="Анна Новосёлова — оптометрист">
       <svg width="220" height="52" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="220" height="52" rx="4" fill="#DDEEFE"/>
         <text class="logo-name" x="110" y="22" text-anchor="middle">ANNA NOVOSELOVA</text>
@@ -26,41 +26,45 @@
       </svg>
     </a>
     <ul class="nav__links">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="obo-mne.html">Обо мне</a></li>
-      <li><a href="priem.html">Приём</a></li>
-      <li><a href="uslugi.html">Услуги и цены</a></li>
-      <li><a href="akcii.html">Акции</a></li>
-      <li><a href="o-zrenii.html">О зрении</a></li>
-      <li><a href="kontakty.html">Контакты</a></li>
-      <li><a href="zapis.html" class="active">Запись</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+      <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+      <li><a href="priem.html" data-i18n="nav.appointment_short">Приём</a></li>
+      <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+      <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+      <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+      <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
+      <li><a href="zapis.html" class="active" data-i18n="nav.booking_page">Запись</a></li>
     </ul>
-    <a href="zapis.html" class="btn nav__cta">Записаться</a>
-    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <a href="zapis.html" class="btn nav__cta" data-i18n="nav.booking_cta_short">Записаться</a>
+    <div class="lang-switch" role="group" aria-label="Language / Jezik">
+      <button type="button" class="lang-switch__btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-switch__btn" data-lang="sr">SR</button>
+    </div>
+    <button class="nav__burger" data-i18n-aria-label="nav.burger_aria" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="zapis-hero">
   <div class="container">
-    <p class="section-label">Онлайн-запись</p>
-    <h1>Записаться на приём</h1>
-    <p class="zapis-hero__sub">Выберите удобный слот в календаре — без звонков, в любое время суток.</p>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:1.5rem;display:inline-block">Онлайн-запись</a>
+    <p class="section-label" data-i18n="appointment.booking_label">Онлайн-запись</p>
+    <h1 data-i18n="cta.book_title">Записаться на приём</h1>
+    <p class="zapis-hero__sub" data-i18n="booking.hero_sub">Выберите удобный слот в календаре — без звонков, в любое время суток.</p>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:1.5rem;display:inline-block" data-i18n="booking.btn_online">Онлайн-запись</a>
   </div>
 </section>
 
 <section class="section section--white">
   <div class="container">
-    <p class="section-label">Как записаться</p>
-    <h2 class="section-title">Шаги</h2>
+    <p class="section-label" data-i18n="appointment.booking_label">Как записаться</p>
+    <h2 class="section-title" data-i18n="booking.steps_heading">Шаги</h2>
     <ol class="zapis-steps">
-      <li>Выберите вид консультации</li>
-      <li>Выберите свободный слот в календаре</li>
-      <li>Заполните анкету</li>
-      <li>Нажмите кнопку <strong>«Написать боту»</strong> — бот пришлёт подтверждение в Telegram</li>
-      <li>Получите подтверждение о записи</li>
+      <li data-i18n="common.step1">Выберите вид консультации</li>
+      <li data-i18n="common.step2">Выберите свободный слот в календаре</li>
+      <li data-i18n="common.step3">Заполните анкету</li>
+      <li data-i18n="common.step4">Нажмите кнопку «Написать боту» — бот пришлёт подтверждение в Telegram</li>
+      <li data-i18n="common.step5">Получите подтверждение о записи</li>
     </ol>
-    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:2rem;display:inline-block">Онлайн-запись</a>
+    <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" style="margin-top:2rem;display:inline-block" data-i18n="booking.btn_online">Онлайн-запись</a>
   </div>
 </section>
 
@@ -71,8 +75,8 @@
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 6.77-1.9 8.96c-.14.62-.5.77-.99.48l-2.74-2.02-1.32 1.27c-.15.14-.27.26-.54.26l.2-2.79 5.04-4.55c.22-.19-.05-.3-.34-.11L7.44 14.7l-2.7-.84c-.59-.18-.6-.59.12-.87l10.58-4.08c.49-.18.92.11.49 1.76z" fill="#229ED9"/></svg>
       </div>
       <div class="zapis-tg__body">
-        <h3>Есть вопросы?</h3>
-        <p>Напишите мне напрямую в Telegram — я обязательно отвечу.</p>
+        <h3 data-i18n="booking.tg_title">Есть вопросы?</h3>
+        <p data-i18n="booking.tg_text">Напишите мне напрямую в Telegram — я обязательно отвечу.</p>
         <a href="https://t.me/AnnaNvslv" class="zapis-tg__link" target="_blank">@AnnaNvslv</a>
       </div>
     </div>
@@ -81,31 +85,31 @@
 
 <section class="section section--white">
   <div class="container zapis-info">
-    <p class="section-label">Перед приёмом</p>
-    <h2 class="section-title">Как подготовиться</h2>
-    <p style="margin-bottom:1.5rem">Подробная инструкция — <a href="priem.html#podgotovka">на странице «Приём»</a>.</p>
+    <p class="section-label" data-i18n="appointment.prep_label">Перед приёмом</p>
+    <h2 class="section-title" data-i18n="appointment.prep_title">Как подготовиться</h2>
+    <p style="margin-bottom:1.5rem" data-i18n="booking.prep_link_text">Подробная инструкция — на странице «Приём».</p>
     <div class="zapis-checklist">
-      <div class="zapis-check"><span class="zapis-check__icon">⏱</span><div><h4>Длительность — 1 час</h4><p>Стоимость: 3 000 динар, оплата наличными. Очки и линзы можно оплатить картой.</p></div></div>
-      <div class="zapis-check"><span class="zapis-check__icon">👓</span><div><h4>Возьмите все очки</h4><p>Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные.</p></div></div>
-      <div class="zapis-check"><span class="zapis-check__icon">💻</span><div><h4>Отдохните от экрана</h4><p>За 30 минут до приёма прекратите активную зрительную нагрузку.</p></div></div>
-      <div class="zapis-check"><span class="zapis-check__icon">🔵</span><div><h4>Снимите контактные линзы</h4><p>За 20 минут до приёма — возьмите контейнер и раствор.</p></div></div>
-      <div class="zapis-check"><span class="zapis-check__icon">❤️</span><div><h4>Если планы изменились</h4><p>Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">⏱</span><div><h4 data-i18n="booking.check1_title">Длительность — 1 час</h4><p data-i18n="booking.check1_text">Стоимость: 3 000 динар, оплата наличными. Очки и линзы можно оплатить картой.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">👓</span><div><h4 data-i18n="booking.check2_title">Возьмите все очки</h4><p data-i18n="booking.check2_text">Все рецепты, обследования от врача и очки с диоптриями — даже старые и сломанные.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">💻</span><div><h4 data-i18n="appointment.prep2_title">Отдохните от экрана</h4><p data-i18n="booking.check3_text">За 30 минут до приёма прекратите активную зрительную нагрузку.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">🔵</span><div><h4 data-i18n="appointment.prep3_title">Снимите контактные линзы</h4><p data-i18n="booking.check4_text">За 20 минут до приёма — возьмите контейнер и раствор.</p></div></div>
+      <div class="zapis-check"><span class="zapis-check__icon">❤️</span><div><h4 data-i18n="appointment.prep4_title">Если планы изменились</h4><p data-i18n="booking.check5_text">Сообщите заранее в Telegram <a href="https://t.me/AnnaNvslv">@AnnaNvslv</a> — перенесём или отменим без проблем.</p></div></div>
     </div>
   </div>
 </section>
 
 <section class="section section--gray">
   <div class="container zapis-address">
-    <p class="section-label">Как добраться</p>
-    <h2 class="section-title">Адрес</h2>
+    <p class="section-label" data-i18n="booking.addr_label">Как добраться</p>
+    <h2 class="section-title" data-i18n="contacts.addr_title">Адрес</h2>
     <div class="zapis-address__grid">
       <div>
         <h4>Оптика Ginter</h4>
-        <p>Trg Republike 25, Novi Sad<br>Напротив Трга Республике</p>
-        <p style="margin-top:0.5rem">Время работы: понедельник — пятница, 09:00–17:00</p>
+        <p data-i18n="booking.addr_text">Trg Republike 25, Novi Sad<br>Напротив Трга Республике</p>
+        <p style="margin-top:0.5rem" data-i18n="booking.hours_text">Время работы: понедельник — пятница, 09:00–17:00</p>
       </div>
       <div>
-        <a href="https://maps.google.com/?q=Trg+Republike+25+Novi+Sad" target="_blank" class="zapis-map-link">📍 Открыть на карте</a>
+        <a href="https://maps.google.com/?q=Trg+Republike+25+Novi+Sad" target="_blank" class="zapis-map-link" data-i18n="booking.map_link">📍 Открыть на карте</a>
       </div>
     </div>
   </div>
@@ -115,21 +119,21 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <div class="footer__logo">Анна Новосёлова</div>
-        <p class="footer__tagline">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
+        <div class="footer__logo" data-i18n="footer.logo">Анна Новосёлова</div>
+        <p class="footer__tagline" data-i18n="footer.tagline_about_promo">Медицинский оптик · Оптометрист<br>Нови Сад, оптика Ginter</p>
       </div>
       <div>
-        <p class="footer__heading">Навигация</p>
+        <p class="footer__heading" data-i18n="footer.heading">Навигация</p>
         <ul class="footer__links">
-          <li><a href="obo-mne.html">Обо мне</a></li>
-          <li><a href="priem.html">Как проходит приём</a></li>
-          <li><a href="uslugi.html">Услуги и цены</a></li>
-          <li><a href="akcii.html">Акции</a></li>
-          <li><a href="o-zrenii.html">О зрении</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
-          <li><a href="zapis.html">Записаться</a></li>
-          <li><a href="https://t.me/optometrist_anna_ns" target="_blank">Telegram-канал</a></li>
-          <li><a href="https://instagram.com/optika_ginter" target="_blank">Instagram</a></li>
+          <li><a href="obo-mne.html" data-i18n="nav.about">Обо мне</a></li>
+          <li><a href="priem.html" data-i18n="nav.appointment">Как проходит приём</a></li>
+          <li><a href="uslugi.html" data-i18n="nav.services">Услуги и цены</a></li>
+          <li><a href="akcii.html" data-i18n="nav.promo">Акции</a></li>
+          <li><a href="o-zrenii.html" data-i18n="nav.vision">О зрении</a></li>
+          <li><a href="kontakty.html" data-i18n="nav.contacts">Контакты</a></li>
+          <li><a href="zapis.html" data-i18n="booking.footer_link">Записаться</a></li>
+          <li><a href="https://t.me/optometrist_anna_ns" target="_blank" data-i18n="footer.telegram_channel">Telegram-канал</a></li>
+          <li><a href="https://instagram.com/optika_ginter" target="_blank" data-i18n="footer.instagram">Instagram</a></li>
         </ul>
       </div>
     </div>
@@ -138,6 +142,7 @@
     </div>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
