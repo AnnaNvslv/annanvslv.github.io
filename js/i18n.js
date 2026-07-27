@@ -282,6 +282,7 @@
     'vision.art4_alt': { ru: 'Проверка зрения подростку в оптике', sr: 'Pregled vida kod tinejdžera u optici' },
     'vision.art4_title': { ru: 'Можно ли проверить зрение подростку в оптике?', sr: 'Da li je moguće proveriti vid tinejdžeru u optici?' },
     'vision.art4_desc': { ru: 'Когда достаточно оптометриста, а когда необходим детский офтальмолог — и почему это важно для точной коррекции.', sr: 'Kada je dovoljan optometrista, a kada je neophodan dečji oftalmolog — i zašto je to važno za tačnu korekciju.' },
+    'vision.back_link': { ru: '← О зрении', sr: '← O vidu' },
     'vision.cta_title': { ru: 'Есть вопрос по зрению?', sr: 'Imate pitanje o vidu?' },
     'vision.cta_sub': { ru: 'Запишитесь на приём или напишите в Telegram — отвечу.', sr: 'Zakažite pregled ili pišite na Telegram — odgovoriću.' },
 
