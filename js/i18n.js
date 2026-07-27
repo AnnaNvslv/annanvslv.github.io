@@ -278,6 +278,10 @@
     'vision.tag_care': { ru: 'Уход за глазами', sr: 'Nega očiju' },
     'vision.art3_title': { ru: 'Сухость глаз: какие капли выбрать?', sr: 'Suvo oko: koje kapi izabrati?' },
     'vision.art3_desc': { ru: 'Жжение, покраснение, ощущение песка — как выбрать подходящие капли и когда обратиться к офтальмологу.', sr: 'Peckanje, crvenilo, osećaj peska u očima — kako izabrati odgovarajuće kapi i kada se obratiti oftalmologu.' },
+    'vision.tag_teens': { ru: 'Дети и подростки', sr: 'Deca i tinejdžeri' },
+    'vision.art4_alt': { ru: 'Проверка зрения подростку в оптике', sr: 'Pregled vida kod tinejdžera u optici' },
+    'vision.art4_title': { ru: 'Можно ли проверить зрение подростку в оптике?', sr: 'Da li je moguće proveriti vid tinejdžeru u optici?' },
+    'vision.art4_desc': { ru: 'Когда достаточно оптометриста, а когда необходим детский офтальмолог — и почему это важно для точной коррекции.', sr: 'Kada je dovoljan optometrista, a kada je neophodan dečji oftalmolog — i zašto je to važno za tačnu korekciju.' },
     'vision.cta_title': { ru: 'Есть вопрос по зрению?', sr: 'Imate pitanje o vidu?' },
     'vision.cta_sub': { ru: 'Запишитесь на приём или напишите в Telegram — отвечу.', sr: 'Zakažite pregled ili pišite na Telegram — odgovoriću.' },
 
