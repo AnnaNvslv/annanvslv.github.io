@@ -68,6 +68,12 @@
     .promo-code__label { font-size: 0.85rem; color: var(--color-text-muted); }
     .promo-code__value { font-family: var(--font-heading); font-weight: 700; color: var(--color-accent); letter-spacing: 0.02em; }
     .promo-card__valid { font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 1.5rem; }
+    .promo-rates { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.5rem; }
+    .promo-rates li { display: flex; align-items: baseline; gap: 0.9rem; padding: 0.6rem 0; border-bottom: 1px solid var(--color-border); }
+    .promo-rates li:last-child { border-bottom: 0; }
+    .promo-rates__pct { font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--color-accent); min-width: 4rem; }
+    .promo-card--archived { opacity: 0.7; padding: 1.5rem 2rem; }
+    .promo-card--archived h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
     .promo-archive-empty { padding: 2rem; text-align: center; color: var(--color-text-light); border: 1px dashed var(--color-border); border-radius: var(--radius-lg); font-size: 0.92rem; }
     .promo-section-heading { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem; }
   </style>
@@ -114,28 +120,25 @@
 
     <div class="promo-card">
       <span class="promo-card__badge promo-card__badge--active" data-i18n="promo.badge_active">⚡️ Активна</span>
-      <h3 data-i18n="promo.card1_title">Скидка -20% на линзы при покупке оправы</h3>
-      <p class="promo-card__lead" data-i18n="promo.card1_lead">Если вы давно планировали новые очки — сейчас самый удачный момент.</p>
+      <h3 data-i18n="promo.card2_title">Скидка до −15% на линзы для очков</h3>
+      <p class="promo-card__lead" data-i18n="promo.card2_lead">Для всех, кто заказывает очки в оптике Ginter до конца октября.</p>
 
-      <p style="font-size:0.85rem;font-weight:600;color:var(--color-text);margin-bottom:0.6rem" data-i18n="promo.tags_intro">В акции участвуют все виды линз:</p>
-      <div class="promo-tags">
-        <span class="tag" data-i18n="promo.tag1">🟡 Однофокальные</span>
-        <span class="tag" data-i18n="promo.tag2">🟡 Прогрессивные (мультифокальные)</span>
-        <span class="tag" data-i18n="promo.tag3">🟡 Фотохромные (хамелеоны)</span>
-        <span class="tag" data-i18n="promo.tag4">🟡 Stellest — контроль миопии у детей</span>
-        <span class="tag" data-i18n="promo.tag5">🟡 И все остальные</span>
-      </div>
+      <ul class="promo-rates">
+        <li><span class="promo-rates__pct">−15%</span><span data-i18n="promo.rate_stock">линзы со склада (готовые, в наличии)</span></li>
+        <li><span class="promo-rates__pct">−10%</span><span data-i18n="promo.rate_rx">линзы индивидуального изготовления (под заказ)</span></li>
+        <li><span class="promo-rates__pct">−10%</span><span data-i18n="promo.rate_stellest">Stellest — контроль миопии у детей</span></li>
+      </ul>
 
       <div class="promo-code">
         <span class="promo-code__label" data-i18n="promo.code_label">🎁 Промокод:</span>
-        <span class="promo-code__value">Anna20</span>
-        <span class="promo-code__label" data-i18n="promo.code_note">— и салфетка для очков в подарок</span>
+        <span class="promo-code__value">LWEB15</span>
+        <span class="promo-code__label" data-i18n="promo.code_note2">— укажите при online-записи или назовите в оптике</span>
       </div>
 
-      <p class="promo-card__valid" data-i18n="promo.valid">Акция действует до 31 июля 2026</p>
+      <p class="promo-card__valid" data-i18n="promo.valid2">Акция действует до 31 октября 2026</p>
 
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
-        <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="about.hero_cta">Записаться на приём</a>
+        <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?promo=LWEB15" class="btn" target="_blank" data-i18n="promo.book_with_code">Записаться с промокодом</a>
         <a href="https://t.me/AnnaNvslv" class="btn btn--outline" target="_blank" data-i18n="promo.ask_telegram">Спросить в Telegram</a>
       </div>
     </div>
@@ -143,7 +146,11 @@
     <div class="promo-section-heading" style="margin-top:3rem">
       <h2 class="section-title" style="margin:0" data-i18n="promo.archive_heading">Архив акций</h2>
     </div>
-    <div class="promo-archive-empty" data-i18n="promo.archive_empty">Завершённые акции появятся здесь</div>
+    <div class="promo-card promo-card--archived">
+      <span class="promo-card__badge promo-card__badge--archived" data-i18n="promo.badge_archived">Завершена</span>
+      <h3 data-i18n="promo.card1_title">Скидка -20% на линзы при покупке оправы</h3>
+      <p class="promo-card__valid" style="margin-bottom:0" data-i18n="promo.valid">Акция действовала до 31 июля 2026</p>
+    </div>
   </div>
 </section>
 
