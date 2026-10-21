@@ -263,6 +263,8 @@
     'promo.rate_stellest': { ru: 'Stellest — контроль миопии у детей', sr: 'Stellest — kontrola miopije kod dece' },
     'promo.code_note2': { ru: '— укажите при online-записи или назовите в оптике', sr: '— unesite pri online zakazivanju ili ga recite u optici' },
     'promo.valid2': { ru: 'Акция действует до 31 октября 2026', sr: 'Akcija traje do 31. oktobra 2026.' },
+    'promo.no_active': { ru: 'Сейчас действующих акций нет — следите за новостями в Instagram и Telegram-канале.', sr: 'Trenutno nema aktivnih akcija — pratite novosti na Instagramu i Telegram kanalu.' },
+    'promo.valid2_ended': { ru: 'Акция действовала с 13 по 21 октября 2026', sr: 'Akcija je trajala od 13. do 21. oktobra 2026.' },
     'promo.book_with_code': { ru: 'Записаться с промокодом', sr: 'Zakaži sa promo kodom' },
     'promo.ask_telegram': { ru: 'Спросить в Telegram', sr: 'Pitajte na Telegramu' },
     'promo.archive_heading': { ru: 'Архив акций', sr: 'Arhiva akcija' },
