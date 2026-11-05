@@ -22,7 +22,7 @@
     'nav.booking_cta_short': { ru: 'Записаться', sr: 'Zakažite' },
     'nav.burger_aria': { ru: 'Меню', sr: 'Meni' },
     'nav.logo_aria_home': { ru: 'Анна Новосёлова — медицинский оптик и оптометрист', sr: 'Ana Novoselova — medicinski optičar i optometrista' },
-    'nav.logo_aria_std': { ru: 'Анна Новосёлова — оптометрист', sr: 'Ana Novoselova — optometrista' },
+    'nav.logo_aria_std': { ru: 'Анна Новосёлова — медицинский оптик и оптометрист', sr: 'Ana Novoselova — medicinski optičar i optometrista' },
 
     /* ===== FOOTER (shared) ===== */
     'footer.logo': { ru: 'Анна Новосёлова', sr: 'Ana Novoselova' },

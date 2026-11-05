@@ -1,5 +1,9 @@
 # Changelog — annanvslv.github.io
 
+## 2026-11-05 — логотип: «MEDICAL OPTICIAN / OPTOMETRIST» на всех страницах
+- Двухстрочная подпись логотипа (как на index.html) перенесена на akcii, kontakty, o-zrenii, obo-mne, priem, uslugi, zapis и 4 статьи в articles/
+- aria-label логотипа и `nav.logo_aria_std` в i18n.js: «медицинский оптик и оптометрист» (RU/SR)
+
 ## 2026-10-21 (2) — Акция −10% на линзы Essilor, промокод LWEB10
 
 - `akcii.html`: активная карточка «−10% на очковые линзы Essilor» (в т.ч. Varilux и Stellest) при заказе очков в оптике Ginter, 22.10–22.11.2026, промокод **LWEB10**; кнопка → `booking.html?promo=LWEB10`
