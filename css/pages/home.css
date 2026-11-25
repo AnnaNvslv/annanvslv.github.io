@@ -378,3 +378,22 @@
   .price-item { flex-direction: column; gap: 0.5rem; }
   .why-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ===== BLACK FRIDAY 26–30.11.2026 ===== */
+.bf__title { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.2; color: var(--color-bg-dark); margin: 0 0 0.6rem; max-width: 640px; }
+.bf__dates { font-size: 1.1rem; font-weight: 600; color: var(--color-accent); margin: 0 0 1.75rem; }
+.bf__list { display: grid; gap: 0.6rem; max-width: 640px; }
+.bf__item { background: var(--color-accent); color: #fff; border-radius: var(--radius-sm); padding: 1.1rem 1.4rem; display: flex; align-items: center; gap: 1.25rem; }
+.bf__pct { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.1rem, 6vw, 2.8rem); line-height: 1; min-width: 9.5rem; white-space: nowrap; }
+.bf__what { font-size: 1.1rem; font-weight: 500; line-height: 1.3; }
+.bf__what small { display: block; font-size: 0.85rem; font-weight: 400; color: var(--color-accent-light); margin-top: 0.2rem; }
+.bf__hint { margin: 1.75rem 0 0.6rem; color: var(--color-text-muted); }
+.bf__code { display: inline-flex; align-items: baseline; gap: 0.6rem; border: 2px dashed var(--color-accent); border-radius: var(--radius-sm); background: #fff; padding: 0.7rem 1.3rem; color: var(--color-text-muted); font-size: 0.9rem; }
+.bf__code strong { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; color: var(--color-accent); letter-spacing: 0.08em; }
+.bf__actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.75rem; }
+.bf__btn { background: var(--color-teal); border-color: var(--color-teal); }
+.bf__btn:hover { background: var(--color-teal-dark); border-color: var(--color-teal-dark); }
+@media (max-width: 768px) {
+  .bf__pct { min-width: 7.5rem; }
+  .bf__actions .btn { width: 100%; text-align: center; }
+}

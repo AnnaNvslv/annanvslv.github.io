@@ -57,7 +57,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/pages/home.css?v=2">
   <style>
     .gde-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
     .gde-photos img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-lg); display: block; }
@@ -132,6 +132,26 @@
     </div>
   </div>
 </section>
+
+<!-- BLACK FRIDAY 26–30.11.2026 (скрывается автоматически с 01.12) -->
+<section class="section section--gray bf" id="black-friday" data-until="2026-12-01">
+  <div class="container">
+    <h2 class="bf__title" data-i18n="home.bf_title">Приглашаю вас за новыми очками в оптику Ginter на Black Friday</h2>
+    <p class="bf__dates" data-i18n="home.bf_dates">С 26 по 30 ноября</p>
+    <div class="bf__list">
+      <div class="bf__item"><span class="bf__pct">−20–50%</span><span class="bf__what" data-i18n="home.bf_frames">оправы</span></div>
+      <div class="bf__item"><span class="bf__pct">−20%</span><span class="bf__what" data-i18n="home.bf_lenses">линзы для очков</span></div>
+      <div class="bf__item"><span class="bf__pct">−20%</span><span class="bf__what"><span data-i18n="home.bf_exam">проверка зрения</span><small data-i18n="home.bf_exam_price">2400 вместо 3000 RSD</small></span></div>
+    </div>
+    <p class="bf__hint" data-i18n="home.bf_hint">Назовите промокод или покажите эту страницу</p>
+    <div class="bf__code"><span data-i18n="home.bf_code_label">Промокод</span> <strong>BLACK</strong></div>
+    <div class="bf__actions">
+      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?promo=BLACK" class="btn bf__btn" target="_blank" data-i18n="promo.book_with_code">Записаться с промокодом</a>
+      <a href="https://maps.app.goo.gl/XuD8LaTNy6Q2iXnn9" class="btn btn--outline" target="_blank" data-i18n="home.bf_map">Как нас найти · Trg Republike 25</a>
+    </div>
+  </div>
+</section>
+<script>(function(){var e=document.getElementById('black-friday');if(e&&new Date()>=new Date(e.dataset.until+'T00:00:00+01:00'))e.remove();})();</script>
 
 <!-- ГДЕ Я ПРИНИМАЮ -->
 <section class="section section--gray">
@@ -234,7 +254,7 @@
   </div>
 </footer>
 
-<script src="js/i18n.js"></script>
+<script src="js/i18n.js?v=2"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>

@@ -1,5 +1,11 @@
 # Changelog — annanvslv.github.io
 
+## 2026-11-25 — Black Friday
+- Главная: блок Black Friday после первого экрана (26–30.11, оправы −20–50%, линзы −20%, проверка −20% 2400 вместо 3000 RSD, промокод BLACK, кнопки «Записаться с промокодом» → booking?promo=BLACK и карта). Сам скрывается с 01.12 (data-until).
+- Акции: карточка Black Friday в «Действуют сейчас»; LWEB10 перенесена в архив.
+- i18n: ключи home.bf_*, promo.bf_*, promo.valid3_ended (RU/SR). Кэш: home.css?v=2, i18n.js?v=2 на всех страницах.
+- TODO после 30.11: убрать секцию #black-friday из index.html и стили .bf__* из home.css; карточку BF перенести в архив.
+
 ## 2026-11-05 — логотип: «MEDICAL OPTICIAN / OPTOMETRIST» на всех страницах
 - Двухстрочная подпись логотипа (как на index.html) перенесена на akcii, kontakty, o-zrenii, obo-mne, priem, uslugi, zapis и 4 статьи в articles/
 - aria-label логотипа и `nav.logo_aria_std` в i18n.js: «медицинский оптик и оптометрист» (RU/SR)
