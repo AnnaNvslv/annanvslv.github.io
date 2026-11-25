@@ -148,6 +148,7 @@
     'services.currency_din': { ru: 'дин', sr: 'din.' },
     'services.item3_title': { ru: 'Контрольный визит', sr: 'Kontrolna poseta' },
     'services.item3_desc': { ru: 'После подбора очков или промежуточной коррекции: проверим, как идёт адаптация и нужна ли замена диоптрий.', sr: 'Nakon izbora naočara ili privremene korekcije: proverićemo kako ide adaptacija i da li je potrebna promena dioptrije.' },
+    'services.book_online': { ru: 'Записаться онлайн', sr: 'Zakažite online' },
     'services.time_30': { ru: '30 минут', sr: '30 minuta' },
     'services.time_15': { ru: '15 минут', sr: '15 minuta' },
     'services.free': { ru: 'Бесплатно', sr: 'Besplatno' },

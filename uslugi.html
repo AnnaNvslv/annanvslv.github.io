@@ -58,6 +58,13 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
   <style>
+    /* per-service booking button */
+    .price-item__side { display: flex; flex-direction: column; align-items: flex-end; gap: 0.75rem; flex-shrink: 0; }
+    .price-item__btn { min-height: 44px; padding: 0 1.25rem; font-size: 0.9rem; white-space: nowrap; }
+    @media (max-width: 700px) {
+      .price-item__side { align-items: stretch; width: 100%; gap: 0.6rem; }
+      .price-item__btn { width: 100%; }
+    }
     /* payment block */
     .payment-block { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.75rem; margin-top: 2rem; }
     .payment-block h3 { font-size: 1.1rem; margin-bottom: 1.15rem; }
@@ -154,7 +161,10 @@
             <div class="svc-link"><a href="priem.html" data-i18n="services.link_appointment">О том, как проходит приём →</a></div>
           </details>
         </div>
-        <div class="price-item__cost">3 000 <span data-i18n="services.currency_din">дин</span></div>
+        <div class="price-item__side">
+          <div class="price-item__cost">3 000 <span data-i18n="services.currency_din">дин</span></div>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?type=primary" class="btn price-item__btn" target="_blank" rel="noopener" data-i18n="services.book_online">Записаться онлайн</a>
+        </div>
       </div>
 
       <div class="price-item price-item--free">
@@ -173,7 +183,10 @@
             </ul>
           </details>
         </div>
-        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+        <div class="price-item__side">
+          <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?type=help" class="btn price-item__btn" target="_blank" rel="noopener" data-i18n="services.book_online">Записаться онлайн</a>
+        </div>
       </div>
 
       <div class="price-item price-item--free">
@@ -212,7 +225,10 @@
             </div>
           </details>
         </div>
-        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+        <div class="price-item__side">
+          <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?type=express" class="btn price-item__btn" target="_blank" rel="noopener" data-i18n="services.book_online">Записаться онлайн</a>
+        </div>
       </div>
 
       <div class="price-item price-item--free">
@@ -221,7 +237,10 @@
           <p data-i18n="services.item3_desc">После подбора очков или промежуточной коррекции: проверим, как идёт адаптация и нужна ли замена диоптрий.</p>
           <span class="price-item__time" data-i18n="services.time_30">30 минут</span>
         </div>
-        <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+        <div class="price-item__side">
+          <div class="price-item__cost price-item__cost--free" data-i18n="services.free">Бесплатно</div>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?type=control" class="btn price-item__btn" target="_blank" rel="noopener" data-i18n="services.book_online">Записаться онлайн</a>
+        </div>
       </div>
 
       <div class="price-item">
@@ -230,7 +249,10 @@
           <p data-i18n="services.item5_desc">В течение 6 месяцев после первичного.</p>
           <span class="price-item__time" data-i18n="services.item1_time">60 минут</span>
         </div>
-        <div class="price-item__cost">2 000 <span data-i18n="services.currency_din">дин</span></div>
+        <div class="price-item__side">
+          <div class="price-item__cost">2 000 <span data-i18n="services.currency_din">дин</span></div>
+          <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html?type=repeat" class="btn price-item__btn" target="_blank" rel="noopener" data-i18n="services.book_online">Записаться онлайн</a>
+        </div>
       </div>
 
     </div>
@@ -295,7 +317,7 @@
     <div class="footer__bottom">Оптика Ginter · Trg Republike 25, Novi Sad · <a href="https://t.me/AnnaNvslv" style="color:var(--color-accent-light)">@AnnaNvslv</a></div>
   </div>
 </footer>
-<script src="js/i18n.js?v=3"></script>
+<script src="js/i18n.js?v=4"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
