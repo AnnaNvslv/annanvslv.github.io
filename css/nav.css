@@ -12,6 +12,7 @@
   justify-content: space-between;
   min-height: 68px;
   gap: 1rem;
+  max-width: 1280px; /* шапке нужно больше места, чем контенту (820px) */
 }
 
 /* old text logo — kept for fallback */
@@ -90,7 +91,8 @@
 
 .nav__cta {
   font-size: 0.82rem;
-  padding: 0.6rem 1.2rem;
+  min-height: 44px;
+  padding: 0 1.1rem;
   flex-shrink: 0;
 }
 
@@ -114,7 +116,7 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1180px) {
   .nav__links, .nav__cta { display: none; }
   .nav__burger { display: flex; }
 
@@ -127,6 +129,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex: 0 0 100%;
     order: 3;
     gap: 0.25rem;
     padding-top: var(--space-sm);
@@ -172,4 +175,9 @@
   background: var(--color-bg-white);
   color: var(--color-accent);
   box-shadow: 0 1px 3px rgba(31,94,156,0.12);
+}
+
+@media (max-width: 400px) {
+  .nav__inner { gap: 0.5rem; }
+  .nav__logo-svg svg { height: 44px; }
 }

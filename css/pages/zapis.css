@@ -222,3 +222,5 @@
   .price-item { flex-direction: column; gap: 0.5rem; }
   .zapis-tg { flex-direction: column; gap: 0.75rem; }
 }
+
+@media (max-width: 600px) { .zapis-hero { padding-top: var(--space-lg); } }

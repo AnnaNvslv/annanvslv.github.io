@@ -64,5 +64,6 @@
 }
 
 @media (max-width: 600px) {
+  .footer { padding: var(--space-lg) 0 var(--space-md); }
   .footer__grid { grid-template-columns: 1fr; gap: var(--space-md); }
 }

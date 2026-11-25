@@ -53,10 +53,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/base.css?v=2">
+  <link rel="stylesheet" href="css/nav.css?v=2">
+  <link rel="stylesheet" href="css/footer.css?v=2">
+  <link rel="stylesheet" href="css/pages/home.css?v=3">
   <style>
     /* per-service booking button */
     .price-item__side { display: flex; flex-direction: column; align-items: flex-end; gap: 0.75rem; flex-shrink: 0; }
@@ -65,6 +65,7 @@
       .price-item__side { align-items: stretch; width: 100%; gap: 0.6rem; }
       .price-item__btn { width: 100%; }
     }
+    .price-item__cost--free { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 600; color: var(--color-teal); letter-spacing: 0; padding-top: 0.35rem; }
     /* payment block */
     .payment-block { background: var(--color-bg-section); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.75rem; margin-top: 2rem; }
     .payment-block h3 { font-size: 1.1rem; margin-bottom: 1.15rem; }
@@ -129,14 +130,14 @@
   </div>
 </nav>
 
-<section class="section section--white" style="padding-top:5rem">
+<section class="section section--white">
   <div class="container">
     <p class="section-label" data-i18n="nav.services">Услуги и цены</p>
-    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0">
       <img src="images/stoimost.png" alt="" aria-hidden="true" style="width:44px;height:44px;object-fit:contain;flex-shrink:0">
       <h1 style="margin:0" data-i18n="services.h1">Стоимость приёма</h1>
     </div>
-    <p style="color:var(--color-text-muted);margin-bottom:2.5rem;font-weight:300;line-height:1.8" data-i18n="services.lead">Я принимаю в Оптике Ginter, в центре Нови Сада. Запись обязательна.</p>
+    <p class="page-lead" data-i18n="services.lead">Я принимаю в Оптике Ginter, в центре Нови Сада. Запись обязательна.</p>
 
     <div class="prices__list">
       <div class="price-item">
@@ -275,11 +276,7 @@
       </div>
     </div>
 
-    <div style="margin-top:1.5rem">
-      <a href="https://annanvslv.github.io/anna-novoselova-bot/booking.html" class="btn" target="_blank" data-i18n="nav.booking_cta">Online-запись</a>
-    </div>
-
-    <p class="prices__note" style="margin-top:1rem" data-i18n="services.note_booking_required">Запись обязательна</p>
+    <p class="prices__note" style="margin-top:1.5rem" data-i18n="services.note_booking_required">Запись обязательна</p>
   </div>
 </section>
 
